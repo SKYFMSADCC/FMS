@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <!-- 配置connectionFactory -->
+    <bean id="jmsFactory" class="org.apache.activemq.pool.PooledConnectionFactory"
+          destroy-method="stop">
+        <property name="connectionFactory">
+            <bean class="org.apache.activemq.ActiveMQConnectionFactory">
+                <property name="brokerURL">
+                    <value>tcp://127.0.0.1:61616</value>
+                </property>
+            </bean>
+        </property>
+        <property name="maxConnections" value="100"></property>
+    </bean>
+
+    <!-- Spring JMS Template -->
+    <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory">
+            <ref local="jmsFactory" />
+        </property>
+        <property name="defaultDestinationName" value="skyfml.topic.wind" />
+        <!-- 区别它采用的模式为false是p2p为true是订阅 -->
+        <property name="pubSubDomain" value="true" />
+    </bean>
+
+    <!-- Spring JMS Template -->
+    <bean id="jmsTemplateQueue" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory">
+            <ref local="jmsFactory" />
+        </property>
+        <property name="defaultDestinationName" value="skyfml.queue.wind" />
+        <!-- 区别它采用的模式为false是p2p为true是订阅 -->
+        <property name="pubSubDomain" value="false" />
+    </bean>
+
+    <!-- 发送消息的来源或目的地（一个主题） -->
+    <bean id="mqTopic" class="org.apache.activemq.command.ActiveMQTopic">
+        <!-- 设置消息主题的名字 -->
+        <constructor-arg index="0" value="skyfml.topic.wind" />
+    </bean>
+    <!-- 发送消息的来源或目的地（一个队列） -->
+    <bean id="mqQueue" class="org.apache.activemq.command.ActiveMQQueue">
+        <!-- 设置消息队列的名字 -->
+        <constructor-arg index="0" value="skyfml.queue.wind" />
+    </bean>
+
+    <bean id="filter" class="com.adcc.skyfml.core.MsgFilter"></bean>
+    <bean id="downRequestWind" class="com.adcc.skyfml.core.DownRequestWind"></bean>
+    <bean id="fmlMsgBuilder" class="com.adcc.skyfml.core.FmlMsgBuilder"></bean>
+    <bean id="windService" class="com.adcc.skyfml.webservice.WindService"></bean>
+
+    <!-- 核心服务控制器类，负责进行各个核心处理方法的调度 -->
+    <bean id="windController" class="com.adcc.skyfml.controller.WindController">
+        <property name="filter" ref="filter"></property>
+        <property name="downRequestWind" ref="downRequestWind"></property>
+        <property name="fmlMsgBuilder" ref="fmlMsgBuilder"></property>
+        <property name="windService" ref="windService"></property>
+        <property name="sender" ref="messageSender"></property>
+    </bean>
+
+    <!-- MQ消息接收类，负责获取下行报文 -->
+    <bean id="messageReceiver"
+          class="com.adcc.skyfml.util.ActivemqReceiver">
+        <property name="jmsTemplate" ref="jmsTemplate"></property>
+        <property name="windController" ref="windController"></property>
+        <property name="destination" ref="mqTopic"></property>
+    </bean>
+
+    <!-- MQ消息发送类，负责发送上行报文 -->
+    <bean id="messageSender"
+          class="com.adcc.skyfml.util.ActivemqSender">
+        <property name="jmsTemplate" ref="jmsTemplateQueue"></property>
+        <property name="destination" ref="mqQueue"></property>
+    </bean>
+
+    <!-- MQ消息接收类，负责获取下行报文 -->
+    <bean id="messageMsmqReceiver"
+          class="com.adcc.skyfml.util.MsmqReceiver">
+        <property name="fullname" value="DIRECT=OS:.\private$\downqueue"></property>
+        <property name="windController" ref="windController"></property>
+    </bean>
+
+    <!-- MQ消息发送类，负责发送上行报文 -->
+    <bean id="messageMsmqSender"
+          class="com.adcc.skyfml.util.MsmqSender">
+        <property name="fullname" value="DIRECT=OS:.\private$\upqueue"></property>
+    </bean>
+
+</beans>
