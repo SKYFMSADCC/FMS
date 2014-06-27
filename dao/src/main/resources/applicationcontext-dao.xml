@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/data/jpa
+       http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+    <!--userDao自动注入到UserServiceImpl-->
+    <context:component-scan base-package="com.adcc.skyfml.dao"/>
+
+    <!--这里配置项里面的注解所使用的处理器已经被上面的标签隐式地注册了-->
+    <!--<context:annotation-config />-->
+
+    <!--这样可以省略对“需要进行事务处理的Service的bean”进行的配置-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!-- 配置Spring Data JPA扫描目录，并自动创建代理的功能-->
+    <jpa:repositories base-package="com.adcc.skyfml.dao"  repository-impl-postfix="Impl" entity-manager-factory-ref="entityManagerFactory" transaction-manager-ref="transactionManager"/>
+
+    <!-- 定义实体管理器工厂 -->
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+    <!-- 配置事务管理器 -->
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+            <property name="jpaVendorAdapter">
+                <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                    <property name="generateDdl" value="false"/>
+                    <property name="showSql" value="true"/>
+                </bean>
+            </property>
+    </bean>
+
+
+</beans>
+
