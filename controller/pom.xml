@@ -9,11 +9,11 @@
     </parent>
     <artifactId>controller</artifactId>
     <modelVersion>4.0.0</modelVersion>
+
     <dependencies>
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
         </dependency>
     </dependencies>
-    
 </project>
