@@ -11,10 +11,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Time: 18:28
  * To change this template use File | Settings | File Templates.
  */
-public class JpaTestCase extends TestCease {
+public class JpaTestCase extends TestCase {
     public static void testJpaTestCase() {
 //        System.out.println("-----------------\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n-----------------\r\n");
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-demo-cfg.xml");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationcontext-dao.xml");
         CptInfoService cptInfoService = ctx.getBean("cptInfoService", CptInfoService.class);
         PlanCptWdService planCptWdService = ctx.getBean("planCptWdService", PlanCptWdService.class);
 

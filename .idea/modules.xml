@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/dao/dao.iml" filepath="$PROJECT_DIR$/dao/dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/dao.mysqlimpl/dao.mysqlimpl.iml" filepath="$PROJECT_DIR$/dao.mysqlimpl/dao.mysqlimpl.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jetplan/jetplan.iml" filepath="$PROJECT_DIR$/jetplan/jetplan.iml" />
       <module fileurl="file://$PROJECT_DIR$/model/model.iml" filepath="$PROJECT_DIR$/model/model.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
       <module fileurl="file://$PROJECT_DIR$/service.config/service.config.iml" filepath="$PROJECT_DIR$/service.config/service.config.iml" />

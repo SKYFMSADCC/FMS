@@ -1,0 +1,1655 @@
+<?xml version="1.0"?>
+<FlightPlan>
+ <Info planNumber="005944" computedAt="2014-05-20T08:36:00Z"
+  scheduledDepartureTime="    " scheduledArrivalTime="    "
+  departDate="2014-05-20T09:50:00+00:00" localTimeDifference="+08:00"
+  flightRules="IFR"
+  flightCruise="  16/F" progs="2000UK " callSign="DKH1161"
+  header="021-22389013" optimizationType="FUEL" USDcost="004403"
+  customerID="UKHO" >
+ </Info>
+ <CustOptions>
+  <Unit name="weightUnit" value="KGS" />
+  <Unit name="dist" value="NM" />
+  <Unit name="temp" value="C" />
+ </CustOptions>
+ <FlightPlanOptions etop="0" etopx="0" trackSummary="N" />
+ <InformationalBanners>
+  <RouteCheckWarning>
+  </RouteCheckWarning>
+  <HistoricalWeather>
+  </HistoricalWeather>
+  <AutomaticWeightRecalculation>
+  </AutomaticWeightRecalculation>
+  <RouteType northOf78N="N" southOf78S="N" />
+ </InformationalBanners>
+ <Remarks>
+  <FreeTalk>
+  </FreeTalk>
+  <FlightBriefDataBase>
+
+  </FlightBriefDataBase>
+ </Remarks>
+ <Alerts>
+NUMBER OF ALERTS  0
+
+
+ </Alerts>
+ <Aircraft>
+  <Crew captain=""
+   firstOfficer=""
+   flightEngineer=""
+   dispatcher="TEST" />
+  <Weights takeoff="065736" landing="061473" payload="014460"
+   operational="043255" zeroFuel="057715" ramp="066136"
+   kalCargoLoad="0174" />
+  <DataBase registrationName="B6619" >
+   <Fuels minimumHold="000000" maximumFuelCapacity="018943"
+    minimumFuel="000000" />
+   <Weights maxTakeoffGW="073500" maxLandingWt="064500"
+    maxZeroFuelWt="061000" maxPayload="018000" maxRampWt="0073900" />
+   <Miscellaneous noiseCategory="" />
+   <ATS selcalCode="CFLQ" tailNumber="B6619"
+    miscInformation="MSN4154" />
+   <Equipment>
+    <GPSRAIM equipmentType="" maskAngle=" 0.0"
+     departureReqNavPerformance=" 0.00"
+     enrouteReqNavPerformance=" 0.00"
+     arrivalReqNavPerformance=" 0.00"
+     gps="Y" gpsReceiver="        "/>
+   </Equipment>
+   <Etp trueAirSpeed="0355" />
+   <Etops approvedTime="0000" />
+   <Biases>
+    <Departure fuel="0000" time="0000" dist="0031" />
+    <Arrival fuel="0000" time="0000" dist="0039" />
+    <FuelFlow percent="+03.4" />
+    <Airspeed knots="  .0 " />
+    <Climb percent="+ 3.4" fuel=" +3.4" time="  .0 " dist="  .0 " />
+    <Cruise percent="+ 3.4" />
+    <Descent percent="+ 3.4" fuel=" +3.4" time="  .0 " dist="  .0 " />
+   </Biases>
+  </DataBase>
+  <CustomerOverrides>
+   <Weights limitingTakeoffWeight=""
+    limitingLandingWeight="" />
+   <Etops approvedTime="0000" />
+  </CustomerOverrides>
+  <GenericDataBase acType="A320-214" engineType="    CFM56-5B4-PS"
+   genericAircraftIdentifier="320D" numberOfEngines="2" />
+ </Aircraft>
+ <Block>
+  <Trip fuel="004262" time="01:35:00" dist="0591"
+   greatCircleDist="0469" airDist="0630" arrivalTime="11:25:00"
+   avgTrueAirSpeed="0441" avgGroundSpeed="0407" avgMach="74" />
+  <Alternate exempt="N" fuel="001897" time="00:45:00" dist="0234"
+   fuelForMaximumBurn="001897" timeForMaximumBurn="00:45:00"
+   arrivalTime="12:10:00" />
+  <Hold fuel="000000" time="00:00:00" />
+  <HoldAtAlternate fuel="000000" time="00:00:00" />
+  <HoldAtDestination fuel="000000" time="00:00:00"
+    altitudeUsedForComputation="000000" />
+  <Reserve fuel="001861" time="00:45:00" percent="0 " />
+  <Contingency1 fuel="000000" time="00:00:00 "/>
+  <Contingency2 fuel="000000" time="00:00:00 "/>
+  <Extra fuel="000000" time="00:00:00" />
+  <Etop fuel="000000" time="00:00:00" />
+  <Additional fuel="000000" flag="0" type="0000000000" />
+  <Adjust fuel="000000" />
+  <Ballast fuel="000000" />
+  <TaxiIn fuel="000000" time="00:00:00" />
+  <TaxiOut fuel="000400" time="00:00:00" />
+  <KalPad fuel="000000" time="00:00:00" />
+  <KalTkr fuel="000000" time="00:00:00" />
+  <Total fuel="008420" time="03:05:00" />
+  <CustomExtra fuel="000000" time="00:00:00" />
+  <CustomTanker fuel="000000" />
+ </Block>
+ <InFlightStart name="ZSPDA" flightLevel=" 00013" />
+ <InFlightEnd name="ZYTL" flightLevel=" 00108" />
+ <TopOfClimb name="TOC" flightLevel="331" remainingDist="0476"
+  cumulativeTime="00:20:00" remainingTripFuel="002617"
+  windDirection="283" windVelocity="091" temperature="M43" />
+ <TopOfDescent name="TOD" flightLevel="331" remainingDist="0064"
+  cumulativeTime="01:20:00" remainingTripFuel="000207" />
+ <POD>
+  <Airport name="PUDONG              " icao="ZSPD"
+   iata="PVG" elevation=" 00013" atisFrequency="127.850"
+   countryCode="ZS" >
+   <DataBase fuelIndex="000000" companyFrequency1="        "
+    companyFrequencyDescription1="                              "
+    taxiOutTime="00:00:00" gpsMaskAngle=" 5.0"
+   />
+  </Airport>
+  <Coord>
+   <Lat direction="N" degrees="31" minutes="08.7" />
+   <Lon direction="E" degrees="121" minutes="47.6" />
+   <LatVersion2 direction="N" degrees="31" minutes="08" seconds="42" />
+   <LonVersion2 direction="E" degrees="121" minutes="47" seconds="36" />
+  </Coord>
+ </POD>
+ <Checkpoints>
+  <Checkpoint id="01" name="ALDAP    "
+  description="ALDAP               "
+   frequency="       " type="WAY" countryCode="ZS" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0072" remainingDist="0519" remainingAirDist="0562"
+   cumulativeTime="00:13:00" remainingTime="01:22:00"
+   cumulativeFuel="001237" remainingTripFuel="003025"
+   requiredFuel="000049" magneticVariation="06W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="31" minutes="37.5" />
+    <Lon direction="E" degrees="122" minutes="22.2" />
+    <LatVersion2 direction="N" degrees="31" minutes="37" seconds="30" />
+    <LonVersion2 direction="E" degrees="122" minutes="22" seconds="12" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="02" name="IBEGI    "
+  description="IBEGI               "
+   frequency="       " type="WAY" countryCode="ZS" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0085" remainingDist="0506" remainingAirDist="0547"
+   cumulativeTime="00:16:00" remainingTime="01:19:00"
+   cumulativeFuel="001386" remainingTripFuel="002876"
+   requiredFuel="000048" magneticVariation="06W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="31" minutes="49.4" />
+    <Lon direction="E" degrees="122" minutes="16.6" />
+    <LatVersion2 direction="N" degrees="31" minutes="49" seconds="24" />
+    <LonVersion2 direction="E" degrees="122" minutes="16" seconds="36" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="03" name="TOC      "
+  description="TOC                 "
+   frequency="       " type="   " countryCode="CC" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0115" remainingDist="0476" remainingAirDist="0513"
+   cumulativeTime="00:20:00" remainingTime="01:15:00"
+   cumulativeFuel="001645" remainingTripFuel="002617"
+   requiredFuel="000045" magneticVariation="06W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="32" minutes="17.4" />
+    <Lon direction="E" degrees="122" minutes="03.6" />
+    <LatVersion2 direction="N" degrees="32" minutes="17" seconds="24" />
+    <LonVersion2 direction="E" degrees="122" minutes="03" seconds="36" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="04" name="ODULO    "
+  description="ODULO               "
+   frequency="       " type="WAY" countryCode="ZS" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0177" remainingDist="0414" remainingAirDist="0442"
+   cumulativeTime="00:29:00" remainingTime="01:06:00"
+   cumulativeFuel="002040" remainingTripFuel="002223"
+   requiredFuel="000041" magneticVariation="06W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="33" minutes="15.2" />
+    <Lon direction="E" degrees="121" minutes="37.2" />
+    <LatVersion2 direction="N" degrees="33" minutes="15" seconds="12" />
+    <LonVersion2 direction="E" degrees="121" minutes="37" seconds="12" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="05" name="GORPI    "
+  description="GORPI               "
+   frequency="       " type="WAY" countryCode="ZS" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0204" remainingDist="0387" remainingAirDist="0411"
+   cumulativeTime="00:33:00" remainingTime="01:02:00"
+   cumulativeFuel="002212" remainingTripFuel="002050"
+   requiredFuel="000039" magneticVariation="06W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="33" minutes="40.1" />
+    <Lon direction="E" degrees="121" minutes="24.4" />
+    <LatVersion2 direction="N" degrees="33" minutes="40" seconds="06" />
+    <LonVersion2 direction="E" degrees="121" minutes="24" seconds="24" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="06" name="SAGUT    "
+  description="SAGUT               "
+   frequency="       " type="WAY" countryCode="ZS" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0290" remainingDist="0301" remainingAirDist="0314"
+   cumulativeTime="00:46:00" remainingTime="00:49:00"
+   cumulativeFuel="002750" remainingTripFuel="001513"
+   requiredFuel="000034" magneticVariation="06W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="35" minutes="00.0" />
+    <Lon direction="E" degrees="120" minutes="46.0" />
+    <LatVersion2 direction="N" degrees="35" minutes="00" seconds="00" />
+    <LonVersion2 direction="E" degrees="120" minutes="46" seconds="00" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="07" name="IDVEL    "
+  description="IDVEL               "
+   frequency="       " type="WAY" countryCode="ZS" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0315" remainingDist="0276" remainingAirDist="0287"
+   cumulativeTime="00:49:00" remainingTime="00:46:00"
+   cumulativeFuel="002901" remainingTripFuel="001361"
+   requiredFuel="000033" magneticVariation="07W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="35" minutes="22.9" />
+    <Lon direction="E" degrees="120" minutes="34.9" />
+    <LatVersion2 direction="N" degrees="35" minutes="22" seconds="54" />
+    <LonVersion2 direction="E" degrees="120" minutes="34" seconds="54" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="08" name="XDX      "
+  description="XUEJIADAO           "
+   frequency="110.4  " type="VOR" countryCode="ZS" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0353" remainingDist="0238" remainingAirDist="0246"
+   cumulativeTime="00:55:00" remainingTime="00:40:00"
+   cumulativeFuel="003129" remainingTripFuel="001134"
+   requiredFuel="000030" magneticVariation="07W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="35" minutes="58.7" />
+    <Lon direction="E" degrees="120" minutes="17.4" />
+    <LatVersion2 direction="N" degrees="35" minutes="58" seconds="42" />
+    <LonVersion2 direction="E" degrees="120" minutes="17" seconds="24" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="09" name="TAO      "
+  description="QINGDAO             "
+   frequency="117.5  " type="VOR" countryCode="ZS" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0372" remainingDist="0219" remainingAirDist="0227"
+   cumulativeTime="00:57:00" remainingTime="00:38:00"
+   cumulativeFuel="003235" remainingTripFuel="001027"
+   requiredFuel="000029" magneticVariation="07W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="36" minutes="17.3" />
+    <Lon direction="E" degrees="120" minutes="22.2" />
+    <LatVersion2 direction="N" degrees="36" minutes="17" seconds="18" />
+    <LonVersion2 direction="E" degrees="120" minutes="22" seconds="12" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="10" name="XIVID    "
+  description="XIVID               "
+   frequency="       " type="WAY" countryCode="ZS" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0390" remainingDist="0201" remainingAirDist="0209"
+   cumulativeTime="01:00:00" remainingTime="00:35:00"
+   cumulativeFuel="003293" remainingTripFuel="000970"
+   requiredFuel="000029" magneticVariation="07W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="36" minutes="34.5" />
+    <Lon direction="E" degrees="120" minutes="28.8" />
+    <LatVersion2 direction="N" degrees="36" minutes="34" seconds="30" />
+    <LonVersion2 direction="E" degrees="120" minutes="28" seconds="48" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="11" name="FD       "
+  description="LAIYANG             "
+   frequency="298.0  " type="NDB" countryCode="ZS" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0413" remainingDist="0178" remainingAirDist="0185"
+   cumulativeTime="01:03:00" remainingTime="00:32:00"
+   cumulativeFuel="003430" remainingTripFuel="000833"
+   requiredFuel="000027" magneticVariation="07W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="36" minutes="55.9" />
+    <Lon direction="E" degrees="120" minutes="37.8" />
+    <LatVersion2 direction="N" degrees="36" minutes="55" seconds="54" />
+    <LonVersion2 direction="E" degrees="120" minutes="37" seconds="48" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="12" name="TEKAM    "
+  description="TEKAM               "
+   frequency="       " type="WAY" countryCode="ZS" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0453" remainingDist="0138" remainingAirDist="0143"
+   cumulativeTime="01:09:00" remainingTime="00:26:00"
+   cumulativeFuel="003673" remainingTripFuel="000589"
+   requiredFuel="000025" magneticVariation="07W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="37" minutes="35.2" />
+    <Lon direction="E" degrees="120" minutes="45.3" />
+    <LatVersion2 direction="N" degrees="37" minutes="35" seconds="12" />
+    <LonVersion2 direction="E" degrees="120" minutes="45" seconds="18" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="13" name="IGDEG    "
+  description="IGDEG               "
+   frequency="       " type="WAY" countryCode="ZS" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0478" remainingDist="0113" remainingAirDist="0117"
+   cumulativeTime="01:13:00" remainingTime="00:22:00"
+   cumulativeFuel="003722" remainingTripFuel="000540"
+   requiredFuel="000024" magneticVariation="07W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="38" minutes="00.4" />
+    <Lon direction="E" degrees="120" minutes="48.3" />
+    <LatVersion2 direction="N" degrees="38" minutes="00" seconds="24" />
+    <LonVersion2 direction="E" degrees="120" minutes="48" seconds="18" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="14" name="NIXEP    "
+  description="NIXEP               "
+   frequency="       " type="WAY" countryCode="ZY" firName="ZYSH"
+   overlap="      " classII=" "
+   cumulativeDist="0495" remainingDist="0096" remainingAirDist="0099"
+   cumulativeTime="01:15:00" remainingTime="00:20:00"
+   cumulativeFuel="003841" remainingTripFuel="000421"
+   requiredFuel="000023" magneticVariation="07W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="38" minutes="15.0" />
+    <Lon direction="E" degrees="120" minutes="59.3" />
+    <LatVersion2 direction="N" degrees="38" minutes="15" seconds="00" />
+    <LonVersion2 direction="E" degrees="120" minutes="59" seconds="18" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="15" name="DOBGA    "
+  description="DOBGA               "
+   frequency="       " type="WAY" countryCode="ZY" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0519" remainingDist="0072" remainingAirDist="0076"
+   cumulativeTime="01:19:00" remainingTime="00:16:00"
+   cumulativeFuel="003997" remainingTripFuel="000266"
+   requiredFuel="000022" magneticVariation="07W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="38" minutes="24.8" />
+    <Lon direction="E" degrees="121" minutes="27.5" />
+    <LatVersion2 direction="N" degrees="38" minutes="24" seconds="48" />
+    <LonVersion2 direction="E" degrees="121" minutes="27" seconds="30" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="16" name="TOD      "
+  description="TOD                 "
+   frequency="       " type="   " countryCode="DD" firName="    "
+   overlap="      " classII=" "
+   cumulativeDist="0527" remainingDist="0064" remainingAirDist="0067"
+   cumulativeTime="01:20:00" remainingTime="00:15:00"
+   cumulativeFuel="004056" remainingTripFuel="000207"
+   requiredFuel="000021" magneticVariation="08W"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="38" minutes="28.2" />
+    <Lon direction="E" degrees="121" minutes="28.2" />
+    <LatVersion2 direction="N" degrees="38" minutes="28" seconds="12" />
+    <LonVersion2 direction="E" degrees="121" minutes="28" seconds="12" />
+  </Coord>
+  </Checkpoint>
+  <Checkpoint id="17" name="ZYTL " description="ZHOUSHUIZI          "
+   frequency="       " type="   " countryCode="ZY" firName="    "
+   cumulativeDist="0591" remainingDist="0000" remainingAirDist="0000"
+   cumulativeTime="01:35:00" remainingTime="00:00:00"
+   cumulativeFuel="004262" remainingTripFuel="000000"
+   requiredFuel="000019"
+   routeSection="ENRTE" areaNavigation="N" mnps="" >
+   <Coord>
+    <Lat direction="N" degrees="38" minutes="58.0" />
+    <Lon direction="E" degrees="121" minutes="32.4" />
+    <LatVersion2 direction="N" degrees="38" minutes="58" seconds="00" />
+    <LonVersion2 direction="E" degrees="121" minutes="32" seconds="24" />
+  </Coord>
+  </Checkpoint>
+ </Checkpoints>
+ <Segments>
+  <Segment id="001" airway="..    " dist="072" time="00:13:00"
+   fuel="001237" weight="000645" minimumSafeAltitude="018"
+   flightLevel="257" fuelFlow="00000" >
+   <Weather temperature="M26" temperatureDeviation="P10"
+    windDirection="285" windVelocity="060" windShear="05"
+    maximumWind="51" tropopause="051" windComponent="P028"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="446" groundSpeed="474"
+    calibratedAirSpeed="301" mach="CLB" />
+   <Course>
+    <Magnetic avg="051.3" end="052" init="051" />
+    <True avg="045.7" end="046" init="046" />
+    <Heading true="039" magnetic="045" />
+   </Course>
+   <From checkpointName="     " />
+   <To checkpointName="ALDAP" />
+  </Segment>
+  <Segment id="002" airway="B221  " dist="013" time="00:03:00"
+   fuel="000149" weight="000643" minimumSafeAltitude="014"
+   flightLevel="285" fuelFlow="00000" >
+   <Weather temperature="M34" temperatureDeviation="P09"
+    windDirection="288" windVelocity="071" windShear="04"
+    maximumWind="41" tropopause="049" windComponent="M049"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="464" groundSpeed="415"
+    calibratedAirSpeed="302" mach="CLB" />
+   <Course>
+    <Magnetic avg="344.0" end="344" init="344" />
+    <True avg="338.1" end="338" init="338" />
+    <Heading true="331" magnetic="337" />
+   </Course>
+   <From checkpointName="ALDAP" />
+   <To checkpointName="IBEGI" />
+  </Segment>
+  <Segment id="003" airway="B221  " dist="030" time="00:04:00"
+   fuel="000259" weight="000641" minimumSafeAltitude="014"
+   flightLevel="331" fuelFlow="02026" >
+   <Weather temperature="M43" temperatureDeviation="P08"
+    windDirection="283" windVelocity="091" windShear="06"
+    maximumWind="38" tropopause="042" windComponent="M057"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="458" groundSpeed="401"
+    calibratedAirSpeed="274" mach="CLB" />
+   <Course>
+    <Magnetic avg="344.7" end="345" init="345" />
+    <True avg="338.9" end="339" init="339" />
+    <Heading true="330" magnetic="336" />
+   </Course>
+   <From checkpointName="IBEGI" />
+   <To checkpointName="TOC  " />
+  </Segment>
+  <Segment id="004" airway="B221  " dist="062" time="00:09:00"
+   fuel="000395" weight="000637" minimumSafeAltitude="014"
+   flightLevel="331" fuelFlow="01279" >
+   <Weather temperature="M43" temperatureDeviation="P08"
+    windDirection="283" windVelocity="091" windShear="06"
+    maximumWind="38" tropopause="042" windComponent="M057"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="458" groundSpeed="401"
+    calibratedAirSpeed="274" mach="774" />
+   <Course>
+    <Magnetic avg="344.7" end="345" init="345" />
+    <True avg="338.9" end="339" init="339" />
+    <Heading true="330" magnetic="336" />
+   </Course>
+   <From checkpointName="TOC  " />
+   <To checkpointName="ODULO" />
+  </Segment>
+  <Segment id="005" airway="B221  " dist="027" time="00:04:00"
+   fuel="000172" weight="000635" minimumSafeAltitude="010"
+   flightLevel="331" fuelFlow="01271" >
+   <Weather temperature="M44" temperatureDeviation="P07"
+    windDirection="285" windVelocity="087" windShear="09"
+    maximumWind="36" tropopause="039" windComponent="M059"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="457" groundSpeed="398"
+    calibratedAirSpeed="274" mach="774" />
+   <Course>
+    <Magnetic avg="342.9" end="343" init="343" />
+    <True avg="336.7" end="337" init="337" />
+    <Heading true="328" magnetic="334" />
+   </Course>
+   <From checkpointName="ODULO" />
+   <To checkpointName="GORPI" />
+  </Segment>
+  <Segment id="006" airway="B221  " dist="086" time="00:13:00"
+   fuel="000538" weight="000630" minimumSafeAltitude="036"
+   flightLevel="331" fuelFlow="01262" >
+   <Weather temperature="M45" temperatureDeviation="P06"
+    windDirection="287" windVelocity="075" windShear="08"
+    maximumWind="37" tropopause="038" windComponent="M051"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="455" groundSpeed="404"
+    calibratedAirSpeed="274" mach="773" />
+   <Course>
+    <Magnetic avg="344.6" end="344" init="345" />
+    <True avg="338.4" end="338" init="338" />
+    <Heading true="331" magnetic="337" />
+   </Course>
+   <From checkpointName="GORPI" />
+   <To checkpointName="SAGUT" />
+  </Segment>
+  <Segment id="007" airway="B221  " dist="025" time="00:03:00"
+   fuel="000152" weight="000628" minimumSafeAltitude="036"
+   flightLevel="331" fuelFlow="01245" >
+   <Weather temperature="M47" temperatureDeviation="P04"
+    windDirection="288" windVelocity="060" windShear="06"
+    maximumWind="37" tropopause="037" windComponent="M041"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="452" groundSpeed="411"
+    calibratedAirSpeed="273" mach="771" />
+   <Course>
+    <Magnetic avg="344.8" end="345" init="345" />
+    <True avg="338.3" end="338" init="338" />
+    <Heading true="332" magnetic="339" />
+   </Course>
+   <From checkpointName="SAGUT" />
+   <To checkpointName="IDVEL" />
+  </Segment>
+  <Segment id="008" airway="B221  " dist="038" time="00:06:00"
+   fuel="000228" weight="000626" minimumSafeAltitude="036"
+   flightLevel="331" fuelFlow="01241" >
+   <Weather temperature="M47" temperatureDeviation="P04"
+    windDirection="289" windVelocity="054" windShear="05"
+    maximumWind="37" tropopause="038" windComponent="M037"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="451" groundSpeed="414"
+    calibratedAirSpeed="272" mach="769" />
+   <Course>
+    <Magnetic avg="344.6" end="344" init="345" />
+    <True avg="338.3" end="338" init="338" />
+    <Heading true="333" magnetic="340" />
+   </Course>
+   <From checkpointName="IDVEL" />
+   <To checkpointName="XDX  " />
+  </Segment>
+  <Segment id="009" airway="W174  " dist="019" time="00:02:00"
+   fuel="000107" weight="000625" minimumSafeAltitude="052"
+   flightLevel="331" fuelFlow="01221" >
+   <Weather temperature="M48" temperatureDeviation="P03"
+    windDirection="291" windVelocity="048" windShear="04"
+    maximumWind="37" tropopause="038" windComponent="M010"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="446" groundSpeed="436"
+    calibratedAirSpeed="269" mach="763" />
+   <Course>
+    <Magnetic avg="017.8" end="018" init="018" />
+    <True avg="011.8" end="012" init="012" />
+    <Heading true="006" magnetic="013" />
+   </Course>
+   <From checkpointName="XDX  " />
+   <To checkpointName="TAO  " />
+  </Segment>
+  <Segment id="010" airway="W174  " dist="018" time="00:03:00"
+   fuel="000057" weight="000624" minimumSafeAltitude="052"
+   flightLevel="291" fuelFlow="00734" >
+   <Weather temperature="M41" temperatureDeviation="P02"
+    windDirection="303" windVelocity="039" windShear="02"
+    maximumWind="37" tropopause="038" windComponent="M006"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="444" groundSpeed="438"
+    calibratedAirSpeed="288" mach="748" />
+   <Course>
+    <Magnetic avg="023.6" end="024" init="023" />
+    <True avg="017.1" end="017" init="017" />
+    <Heading true="012" magnetic="019" />
+   </Course>
+   <From checkpointName="TAO  " />
+   <To checkpointName="XIVID" />
+  </Segment>
+  <Segment id="011" airway="W174  " dist="023" time="00:03:00"
+   fuel="000137" weight="000623" minimumSafeAltitude="052"
+   flightLevel="291" fuelFlow="01232" >
+   <Weather temperature="M41" temperatureDeviation="P02"
+    windDirection="304" windVelocity="041" windShear="02"
+    maximumWind="37" tropopause="038" windComponent="M012"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="426" groundSpeed="414"
+    calibratedAirSpeed="276" mach="717" />
+   <Course>
+    <Magnetic avg="025.6" end="026" init="025" />
+    <True avg="018.6" end="019" init="019" />
+    <Heading true="014" magnetic="021" />
+   </Course>
+   <From checkpointName="XIVID" />
+   <To checkpointName="FD   " />
+  </Segment>
+  <Segment id="012" airway="W172  " dist="040" time="00:06:00"
+   fuel="000244" weight="000621" minimumSafeAltitude="052"
+   flightLevel="291" fuelFlow="01238" >
+   <Weather temperature="M41" temperatureDeviation="P02"
+    windDirection="305" windVelocity="043" windShear="02"
+    maximumWind="37" tropopause="038" windComponent="M021"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="428" groundSpeed="407"
+    calibratedAirSpeed="277" mach="721" />
+   <Course>
+    <Magnetic avg="015.8" end="016" init="016" />
+    <True avg="008.6" end="009" init="009" />
+    <Heading true="004" magnetic="011" />
+   </Course>
+   <From checkpointName="FD   " />
+   <To checkpointName="TEKAM" />
+  </Segment>
+  <Segment id="013" airway="W172  " dist="025" time="00:04:00"
+   fuel="000049" weight="000620" minimumSafeAltitude="040"
+   flightLevel="207" fuelFlow="00386" >
+   <Weather temperature="M21" temperatureDeviation="P05"
+    windDirection="316" windVelocity="043" windShear="02"
+    maximumWind="37" tropopause="038" windComponent="M022"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="428" groundSpeed="406"
+    calibratedAirSpeed="316" mach="722" />
+   <Course>
+    <Magnetic avg="012.6" end="013" init="012" />
+    <True avg="005.3" end="005" init="005" />
+    <Heading true="000" magnetic="007" />
+   </Course>
+   <From checkpointName="TEKAM" />
+   <To checkpointName="IGDEG" />
+  </Segment>
+  <Segment id="014" airway="W173  " dist="017" time="00:02:00"
+   fuel="000119" weight="000619" minimumSafeAltitude="021"
+   flightLevel="207" fuelFlow="01345" >
+   <Weather temperature="M21" temperatureDeviation="P05"
+    windDirection="315" windVelocity="043" windShear="02"
+    maximumWind="37" tropopause="038" windComponent="M013"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="397" groundSpeed="384"
+    calibratedAirSpeed="292" mach="641" />
+   <Course>
+    <Magnetic avg="038.1" end="038" init="038" />
+    <True avg="030.7" end="031" init="031" />
+    <Heading true="025" magnetic="032" />
+   </Course>
+   <From checkpointName="IGDEG" />
+   <To checkpointName="NIXEP" />
+  </Segment>
+  <Segment id="015" airway="..    " dist="024" time="00:04:00"
+   fuel="000156" weight="000617" minimumSafeAltitude="029"
+   flightLevel="207" fuelFlow="01290" >
+   <Weather temperature="M21" temperatureDeviation="P05"
+    windDirection="315" windVelocity="044" windShear="02"
+    maximumWind="37" tropopause="038" windComponent="P014"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="385" groundSpeed="399"
+    calibratedAirSpeed="282" mach="622" />
+   <Course>
+    <Magnetic avg="073.6" end="074" init="073" />
+    <True avg="066.0" end="066" init="066" />
+    <Heading true="060" magnetic="067" />
+   </Course>
+   <From checkpointName="NIXEP" />
+   <To checkpointName="DOBGA" />
+  </Segment>
+  <Segment id="016" airway="..    " dist="008" time="00:01:00"
+   fuel="000059" weight="000617" minimumSafeAltitude="029"
+   flightLevel="207" fuelFlow="01378" >
+   <Weather temperature="M21" temperatureDeviation="P05"
+    windDirection="315" windVelocity="044" windShear="02"
+    maximumWind="35" tropopause="038" windComponent="M029"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="404" groundSpeed="375"
+    calibratedAirSpeed="297" mach="653" />
+   <Course>
+    <Magnetic avg="013.9" end="014" init="014" />
+    <True avg="006.5" end="007" init="007" />
+    <Heading true="002" magnetic="010" />
+   </Course>
+   <From checkpointName="DOBGA" />
+   <To checkpointName="TOD  " />
+  </Segment>
+  <Segment id="017" airway="..    " dist="064" time="00:15:00"
+   fuel="000207" weight="000615" minimumSafeAltitude="029"
+   flightLevel="001" >
+   <Weather temperature="P13" temperatureDeviation="P02"
+    windDirection="339" windVelocity="015" windShear="00"
+    maximumWind="35" tropopause="038" windComponent="M013"
+    turbulenceIndicator="0" />
+   <Speed trueAirSpeed="255" groundSpeed="242"
+    calibratedAirSpeed="255" mach="DSC" />
+   <Course>
+    <Magnetic avg="013.9" end="014" init="014" variation="08W" />
+    <True avg="006.5" end="007" init="007" />
+    <Heading true="002" magnetic="010" />
+   </Course>
+   <From checkpointName="TOD  " />
+   <To checkpointName="ZYTL " />
+  </Segment>
+ </Segments>
+ <POA>
+  <Airport name="ZHOUSHUIZI          " icao="ZYTL"
+   iata="DLC" elevation=" 00108" atisFrequency="126.650"
+   localTimeDifference="+08:00" >
+   <DataBase fuelIndex="000000" companyFrequency1="        "
+    companyFrequencyDescription1="                              "
+    taxiInTime="00:00:00"  gpsMaskAngle=" 0.0"
+   />
+  </Airport>
+  <Coord>
+   <Lat direction="N" degrees="38" minutes="58.0" />
+   <Lon direction="E" degrees="121" minutes="32.4" />
+  </Coord>
+ </POA>
+ <Alternate1 routeName="ZYTLZYTX" flightLevel="207" fuel="001897"
+  time="00:45:00" dist="000234" airDist="0245" heading="029"
+  trueAirSpeed="364"
+  avgWindComponent="M011" avgTemperatureDeviation="P04" cruise="LRC"
+  minimumSafeAltitude="058" arrivalTime="12:10:00" >
+  <Airport name="TAOXIAN             " icao="ZYTX"
+   iata="SHE" elevation="  200" >
+   <DataBase gpsMaskAngle=" 0.0"
+   />
+  </Airport>
+  <Coord>
+   <Lat direction="N" degrees="41" minutes="38.4" />
+   <Lon direction="E" degrees="123" minutes="29.4" />
+  </Coord>
+  <Route>DLC..CHI A588 BIDIB..ZYTX
+
+  </Route>
+  <Checkpoints>
+   <Checkpoint id="01" name="TOC  "
+    frequency="      " type="   "
+    cumulativeDist="0043" cumulativeTime="00:09:00"
+    cumulativeFuel="00850" >
+   <Coord>
+    <Lat direction="N" degrees="39" minutes="12.3" />
+    <Lon direction="E" degrees="122" minutes="24.5" />
+   </Coord>
+  </Checkpoint>
+   <Checkpoint id="02" name="CHI  "
+    frequency="116.8 " type="VOR"
+    cumulativeDist="0053" cumulativeTime="00:11:00"
+    cumulativeFuel="00918" >
+   <Coord>
+    <Lat direction="N" degrees="39" minutes="16.0" />
+    <Lon direction="E" degrees="122" minutes="37.0" />
+   </Coord>
+  </Checkpoint>
+   <Checkpoint id="03" name="NODAL"
+    frequency="      " type="WAY"
+    cumulativeDist="0107" cumulativeTime="00:20:00"
+    cumulativeFuel="01284" >
+   <Coord>
+    <Lat direction="N" degrees="40" minutes="02.8" />
+    <Lon direction="E" degrees="123" minutes="10.7" />
+   </Coord>
+  </Checkpoint>
+   <Checkpoint id="04" name="ISKEM"
+    frequency="      " type="WAY"
+    cumulativeDist="0161" cumulativeTime="00:29:00"
+    cumulativeFuel="01650" >
+   <Coord>
+    <Lat direction="N" degrees="40" minutes="50.0" />
+    <Lon direction="E" degrees="123" minutes="45.0" />
+   </Coord>
+  </Checkpoint>
+   <Checkpoint id="05" name="TOD  "
+    frequency="      " type="   "
+    cumulativeDist="0166" cumulativeTime="00:30:00"
+    cumulativeFuel="01676" >
+   <Coord>
+    <Lat direction="N" degrees="40" minutes="54.4" />
+    <Lon direction="E" degrees="123" minutes="48.2" />
+   </Coord>
+  </Checkpoint>
+   <Checkpoint id="06" name="BIDIB"
+    frequency="      " type="WAY"
+    cumulativeDist="0200" cumulativeTime="00:38:00"
+    cumulativeFuel="01786" >
+   <Coord>
+    <Lat direction="N" degrees="41" minutes="24.4" />
+    <Lon direction="E" degrees="124" minutes="09.8" />
+   </Coord>
+  </Checkpoint>
+   <Checkpoint id="07" name="ZYTX "
+    frequency="      " type="   "
+    cumulativeDist="0234" cumulativeTime="00:46:00"
+    cumulativeFuel="01896" >
+   <Coord>
+    <Lat direction="N" degrees="41" minutes="38.5" />
+    <Lon direction="E" degrees="123" minutes="29.1" />
+   </Coord>
+  </Checkpoint>
+  </Checkpoints>
+  <Segments>
+   <Segment id="001" airway=" ..   " dist="043" time="00:09:00"
+    minimumSafeAltitude="046" flightLevel="207" fuelFlow=" .... " >
+    <Weather temperature="M22"
+     windDirection="314" windVelocity="048" windShear="01"
+     tropopause="037" windComponent="P018" />
+    <Speed trueAirSpeed="301" groundSpeed="319" mach="CLB" />
+    <Course>
+     <Magnetic avg="078" />
+     <True avg="070" />
+     <Heading true="071" />
+    </Course>
+    <From checkpointName="     " />
+    <To checkpointName="TOC  " />
+   </Segment>
+   <Segment id="002" airway=" ..   " dist="010" time="00:02:00"
+    minimumSafeAltitude="046" flightLevel="207" fuelFlow=" 01201" >
+    <Weather temperature="M22"
+     windDirection="314" windVelocity="048" windShear="01"
+     tropopause="037" windComponent="P018" />
+    <Speed trueAirSpeed="365" groundSpeed="383" mach="591" />
+    <Course>
+     <Magnetic avg="078" />
+     <True avg="070" />
+     <Heading true="071" />
+    </Course>
+    <From checkpointName="TOC  " />
+    <To checkpointName="CHI  " />
+   </Segment>
+   <Segment id="003" airway=" A588 " dist="054" time="00:09:00"
+    minimumSafeAltitude="054" flightLevel="207" fuelFlow=" 01196" >
+    <Weather temperature="M22"
+     windDirection="313" windVelocity="054" windShear="01"
+     tropopause="035" windComponent="M016" />
+    <Speed trueAirSpeed="365" groundSpeed="348" mach="591" />
+    <Course>
+     <Magnetic avg="037" />
+     <True avg="029" />
+     <Heading true="029" />
+    </Course>
+    <From checkpointName="CHI  " />
+    <To checkpointName="NODAL" />
+   </Segment>
+   <Segment id="004" airway=" A588 " dist="054" time="00:09:00"
+    minimumSafeAltitude="054" flightLevel="207" fuelFlow=" 01196" >
+    <Weather temperature="M23"
+     windDirection="313" windVelocity="054" windShear="02"
+     tropopause="033" windComponent="M016" />
+    <Speed trueAirSpeed="363" groundSpeed="346" mach="589" />
+    <Course>
+     <Magnetic avg="037" />
+     <True avg="029" />
+     <Heading true="029" />
+    </Course>
+    <From checkpointName="NODAL" />
+    <To checkpointName="ISKEM" />
+   </Segment>
+   <Segment id="005" airway=" A588 " dist="005" time="00:01:00"
+    minimumSafeAltitude="058" flightLevel="207" fuelFlow=" .... " >
+    <Weather temperature="M24"
+     windDirection="315" windVelocity="032" windShear="01"
+     tropopause="034" windComponent="M012" />
+    <Speed trueAirSpeed="266" groundSpeed="253" mach="DSC" />
+    <Course>
+     <Magnetic avg="038" />
+     <True avg="029" />
+     <Heading true="031" />
+    </Course>
+    <From checkpointName="ISKEM" />
+    <To checkpointName="TOD  " />
+   </Segment>
+   <Segment id="006" airway=" A588 " dist="034" time="00:08:00"
+    minimumSafeAltitude="058" flightLevel="DSC" fuelFlow=" .... " >
+    <Weather temperature="M01"
+     windDirection="315" windVelocity="032" windShear="01"
+     tropopause="034" windComponent="M010" />
+    <Speed trueAirSpeed="266" groundSpeed="255" mach="DSC" />
+    <Course>
+     <Magnetic avg="038" />
+     <True avg="029" />
+     <Heading true="031" />
+    </Course>
+    <From checkpointName="TOD  " />
+    <To checkpointName="BIDIB" />
+   </Segment>
+   <Segment id="007" airway=" ..   " dist="034" time="00:08:00"
+    minimumSafeAltitude="058" flightLevel="DSC" fuelFlow=" .... " >
+    <Weather temperature="P08"
+     windDirection="318" windVelocity="016" windShear="01"
+     tropopause="034" windComponent=" 000" />
+    <Speed trueAirSpeed="   " groundSpeed="   " mach="DSC" />
+    <Course>
+     <Magnetic avg="304" />
+     <True avg="295" />
+     <Heading true="031" />
+    </Course>
+    <From checkpointName="BIDIB" />
+    <To checkpointName="ZYTX " />
+   </Segment>
+  </Segments>
+ </Alternate1>
+ <Route averageTrack="358" minimumSafeAltitude="05200" >
+  <NatTrack>TRK ZSPDZYTL</NatTrack>
+  <Customer routeName="ZSPDZYTL" routeGroup="" />
+  <RouteLineVersion1>
+ZSPD..ALDAP B221 XDX W174 FD W172 IGDEG W173 NIXEP..DOBGA..ZYTL
+  </RouteLineVersion1>
+  <RouteLineVersion2>
+ZSPD-ALDAP/B221/XDX/W174/FD/W172/IGDEG/W173/NIXEP-DOBGA-ZYTL
+  </RouteLineVersion2>
+  <RouteLineVersion3>
+-K0848S1010 DCT ALDAP B221 XDX W174 TAO/K0822S0890 W174 FD W172
+ TEKAM/K0793S0630 W172 IGDEG W173 NIXEP DCT DOBGA DCT
+  </RouteLineVersion3>
+  <RouteLineVersion4>
+ZSPD..ALDAP B221 XDX W174 FD W172 IGDEG W173 NIXEP..DOBGA..ZYTL
+  </RouteLineVersion4>
+  <RouteLineVersion5>
+   ALDAP.B221.XDX.W174.FD.W172.IGDEG.W173.NIXEP..DOBGA
+  </RouteLineVersion5>
+  <RouteLineVersion6>
+   -ALDAP B221 XDX W174 TAO W174 FD W172 TEKAM W172 IGDEG W173
+    NIXEP DOBGA
+  </RouteLineVersion6>
+  <RouteLineVersion7>
+   -ALDAP B221 XDX W174 TAO W174 FD W172 TEKAM W172 IGDEG W173
+    NIXEP DOBGA
+  </RouteLineVersion7>
+  <FlightLevels>
+   <FlightLevel altitude="331" checkpoint="XIVID" />
+   <FlightLevel altitude="291" checkpoint="IGDEG" />
+   <FlightLevel altitude="207" checkpoint="" />
+   <Summary>
+FL  331/TAO   291/TEKAM 207
+   </Summary>
+  </FlightLevels>
+  <MultiCruise>
+  </MultiCruise>
+  <Firs>
+   <Fir name="ZYSH" eta="01:15:00" />
+   <Summary>
+
+FIRS  ZYSH/0115
+   </Summary>
+  </Firs>
+ </Route>
+ <Weather averageWind="M35 " maxShear="09/GORPI" avgISATemp="P05"
+  averageDirection="291" averageVelocity="054"
+  averageWindFirstHalfOfFlight="M050" />
+ <AuxiliaryCruise>
+ </AuxiliaryCruise>
+<MinimumEquipmentList  tailNumber="        ">
+</MinimumEquipmentList>
+ <FilingStrip
+  type="international"
+  flightIdentification="DKH1161"
+  flightRules="I"
+  typeOfFlight="S"
+  aircraftID="B6619"
+  aircraftData="A320"
+  wakeTurbulanceCategory="M"
+  beaconCode=""
+  equipment="SDFGHIRW/S"
+  speedData="K0848"
+  coordinationFix="ZSPD"
+  coordinationTime="0950"
+  assignedAltitude=""
+  requestedAltitude="S1010"
+  routeData="DCT ALDAP B221 XDX W174 TAO/K0822S0890
+    W174 FD W172 TEKAM/K0793S0630 W172 IGDEG W173
+    NIXEP DCT DOBGA DCT"
+  pointOfArrival="ZYTL"
+  estimatedTimeEnroute="0135"
+  remarksGeneralInformation=" TCAS EQUIPPED"
+  TCASEquipped="A"
+  fuelOnBoard=""
+  alternateAirport="ZYTX"
+  secondAlternateAirport=""
+  otherInformation="EET/ZYSH0115
+    REG/B6619 SEL/CFLQ"
+  pilotDetails="????"
+  endurance="0332"
+  personsOnBoard=""
+  colorOfAircraft="W"
+  emergencyRadio=""
+  survivalEquipment=""
+  jackets=""
+  dinghies=" C"
+  filedBy=""
+  additionalRequirements="????"
+  nadinAddress="????"
+  aftnAddresses="ZSPDZPZX ZYSHZQZX ZYHBZRZX ZSJNZRZX ZSQDZRZX
+                 ZBBBZGZX ZYTLZXZX ZYTXZBZX"
+  captainsName=""
+  ifpsAddress="????"
+  dateOfFlight="140520">
+ <Summary>
+
+(FPL-DKH1161-IS
+-A320/M-SDE1E3FGHIRW/S
+-ZSPD0950
+-K0848S1010 DCT ALDAP B221 XDX W174 TAO/K0822S0890 W174 FD W172
+ TEKAM/K0793S0630 W172 IGDEG W173 NIXEP DCT DOBGA DCT
+-ZYTL0135 ZYTX
+-PBN/A1B1C1D1O2S1S2 DOF/140520 REG/B6619 EET/ZYSH0115 SEL/CFLQ
+ OPR/JUNEYAO AIRLINES RMK/TCAS EQUIPPED
+-E/0305 P/TBN
+ A/W)
+ </Summary>
+ </FilingStrip>
+ <AirRefueling>
+  <On payload="000000" fuel="000000" />
+  <Off payload="000000" fuel="000000" />
+  <Reserve fuel="000000" />
+ </AirRefueling>
+ <Tankering type=" none" >
+ </Tankering>
+ <FuelBurnAdjustments dependency="preference setting" >
+  <WeightPlus1000 cruise="CI " flightLevel="331" fuel="004309"
+   time="01:35:00" averageWind="M033" />
+  <WeightLess1000 cruise="CI " flightLevel="331" fuel="004232"
+   time="01:36:00" averageWind="M033" />
+  <LongRangeFlat cruise="LRC" flightLevel="331" fuel="004163"
+   time="01:35:00" averageWind="M034" />
+  <LongRangeFLNL cruise="LRC" flightLevel="321" fuel="004186"
+   time="01:35:00" averageWind="M034" />
+  <LongRangeFLNH cruise="LRC" flightLevel="341" fuel="004136"
+   time="01:34:00" averageWind="M035" />
+  <PrimaryFLNH cruise="CI " flightLevel="341" fuel="004131"
+   time="01:34:00" averageWind="M035" />
+  <FLDomesticChinaH1 cruise="CI " flightLevel="351" fuel="004111"
+   time="01:34:00" averageWind="M036" />
+  <FLDomesticChinaL1 cruise="CI " flightLevel="311" fuel="004214"
+   time="01:34:00" averageWind="M032" />
+  <FLDomesticChinaL2 cruise="CI " flightLevel="291" fuel="004271"
+   time="01:36:00" averageWind="M029" />
+ </FuelBurnAdjustments>
+ <WindReport>
+  <Checkpoint name="ALDAP">
+   <FlightLevel level="09000" windDirection="36" windVelocity="023"
+    temperature="P08" windShear="01" />
+   <FlightLevel level="10000" windDirection="36" windVelocity="025"
+    temperature="P07" windShear="02" />
+   <FlightLevel level="12000" windDirection="35" windVelocity="027"
+    temperature="P03" windShear="04" />
+   <FlightLevel level="18000" windDirection="30" windVelocity="033"
+    temperature="M10" windShear="05" />
+   <FlightLevel level="24000" windDirection="28" windVelocity="055"
+    temperature="M23" windShear="04" />
+   <FlightLevel level="25000" windDirection="28" windVelocity="057"
+    temperature="M24" windShear="04" />
+   <FlightLevel level="29000" windDirection="29" windVelocity="073"
+    temperature="M33" windShear="03" />
+   <FlightLevel level="30000" windDirection="29" windVelocity="076"
+    temperature="M35" windShear="04" />
+   <FlightLevel level="31000" windDirection="29" windVelocity="080"
+    temperature="M38" windShear="05" />
+   <FlightLevel level="33000" windDirection="28" windVelocity="088"
+    temperature="M42" windShear="05" />
+   <FlightLevel level="34000" windDirection="28" windVelocity="091"
+    temperature="M44" windShear="04" />
+   <FlightLevel level="37000" windDirection="28" windVelocity="096"
+    temperature="M49" windShear="01" />
+   <FlightLevel level="39000" windDirection="28" windVelocity="093"
+    temperature="M52" windShear="02" />
+   <FlightLevel level="41000" windDirection="28" windVelocity="089"
+    temperature="M55" windShear="02" />
+   <FlightLevel level="45000" windDirection="28" windVelocity="082"
+    temperature="M60" windShear="03" />
+   <FlightLevel level="50000" windDirection="27" windVelocity="064"
+    temperature="M67" windShear="04" />
+  </Checkpoint>
+  <Checkpoint name="IBEGI">
+   <FlightLevel level="09000" windDirection="36" windVelocity="023"
+    temperature="P08" windShear="01" />
+   <FlightLevel level="10000" windDirection="36" windVelocity="024"
+    temperature="P07" windShear="02" />
+   <FlightLevel level="12000" windDirection="35" windVelocity="026"
+    temperature="P03" windShear="03" />
+   <FlightLevel level="18000" windDirection="31" windVelocity="032"
+    temperature="M10" windShear="05" />
+   <FlightLevel level="24000" windDirection="29" windVelocity="051"
+    temperature="M23" windShear="04" />
+   <FlightLevel level="25000" windDirection="29" windVelocity="053"
+    temperature="M25" windShear="04" />
+   <FlightLevel level="29000" windDirection="29" windVelocity="071"
+    temperature="M34" windShear="04" />
+   <FlightLevel level="30000" windDirection="29" windVelocity="075"
+    temperature="M36" windShear="05" />
+   <FlightLevel level="31000" windDirection="29" windVelocity="080"
+    temperature="M38" windShear="06" />
+   <FlightLevel level="33000" windDirection="28" windVelocity="089"
+    temperature="M42" windShear="06" />
+   <FlightLevel level="34000" windDirection="28" windVelocity="093"
+    temperature="M44" windShear="04" />
+   <FlightLevel level="37000" windDirection="28" windVelocity="098"
+    temperature="M49" windShear="01" />
+   <FlightLevel level="39000" windDirection="28" windVelocity="093"
+    temperature="M52" windShear="03" />
+   <FlightLevel level="41000" windDirection="28" windVelocity="088"
+    temperature="M55" windShear="02" />
+   <FlightLevel level="45000" windDirection="28" windVelocity="080"
+    temperature="M60" windShear="03" />
+   <FlightLevel level="50000" windDirection="27" windVelocity="064"
+    temperature="M66" windShear="11" />
+  </Checkpoint>
+  <Checkpoint name="ODULO">
+   <FlightLevel level="09000" windDirection="00" windVelocity="021"
+    temperature="P08" windShear="01" />
+   <FlightLevel level="10000" windDirection="00" windVelocity="022"
+    temperature="P06" windShear="01" />
+   <FlightLevel level="12000" windDirection="35" windVelocity="023"
+    temperature="P02" windShear="02" />
+   <FlightLevel level="18000" windDirection="32" windVelocity="026"
+    temperature="M11" windShear="04" />
+   <FlightLevel level="24000" windDirection="29" windVelocity="041"
+    temperature="M25" windShear="05" />
+   <FlightLevel level="25000" windDirection="29" windVelocity="044"
+    temperature="M26" windShear="05" />
+   <FlightLevel level="29000" windDirection="29" windVelocity="066"
+    temperature="M35" windShear="05" />
+   <FlightLevel level="30000" windDirection="29" windVelocity="071"
+    temperature="M37" windShear="06" />
+   <FlightLevel level="31000" windDirection="29" windVelocity="078"
+    temperature="M39" windShear="07" />
+   <FlightLevel level="33000" windDirection="28" windVelocity="091"
+    temperature="M43" windShear="06" />
+   <FlightLevel level="34000" windDirection="28" windVelocity="096"
+    temperature="M45" windShear="07" />
+   <FlightLevel level="37000" windDirection="28" windVelocity="102"
+    temperature="M50" windShear="01" />
+   <FlightLevel level="39000" windDirection="28" windVelocity="094"
+    temperature="M53" windShear="04" />
+   <FlightLevel level="41000" windDirection="28" windVelocity="087"
+    temperature="M58" windShear="04" />
+   <FlightLevel level="45000" windDirection="28" windVelocity="074"
+    temperature="M58" windShear="03" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="064"
+    temperature="M63" windShear="02" />
+  </Checkpoint>
+  <Checkpoint name="GORPI">
+   <FlightLevel level="09000" windDirection="01" windVelocity="020"
+    temperature="P08" windShear="01" />
+   <FlightLevel level="10000" windDirection="00" windVelocity="021"
+    temperature="P05" windShear="02" />
+   <FlightLevel level="12000" windDirection="35" windVelocity="022"
+    temperature="P01" windShear="01" />
+   <FlightLevel level="18000" windDirection="32" windVelocity="025"
+    temperature="M12" windShear="03" />
+   <FlightLevel level="24000" windDirection="30" windVelocity="033"
+    temperature="M26" windShear="03" />
+   <FlightLevel level="25000" windDirection="30" windVelocity="035"
+    temperature="M27" windShear="04" />
+   <FlightLevel level="29000" windDirection="29" windVelocity="054"
+    temperature="M37" windShear="06" />
+   <FlightLevel level="30000" windDirection="29" windVelocity="058"
+    temperature="M39" windShear="07" />
+   <FlightLevel level="31000" windDirection="29" windVelocity="068"
+    temperature="M40" windShear="08" />
+   <FlightLevel level="33000" windDirection="29" windVelocity="087"
+    temperature="M44" windShear="09" />
+   <FlightLevel level="34000" windDirection="28" windVelocity="095"
+    temperature="M45" windShear="10" />
+   <FlightLevel level="37000" windDirection="28" windVelocity="104"
+    temperature="M52" windShear="02" />
+   <FlightLevel level="39000" windDirection="28" windVelocity="093"
+    temperature="M54" windShear="05" />
+   <FlightLevel level="41000" windDirection="28" windVelocity="084"
+    temperature="M55" windShear="04" />
+   <FlightLevel level="45000" windDirection="28" windVelocity="070"
+    temperature="M58" windShear="03" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="062"
+    temperature="M62" windShear="01" />
+  </Checkpoint>
+  <Checkpoint name="SAGUT">
+   <FlightLevel level="09000" windDirection="35" windVelocity="018"
+    temperature="P07" windShear="02" />
+   <FlightLevel level="10000" windDirection="36" windVelocity="020"
+    temperature="P05" windShear="01" />
+   <FlightLevel level="12000" windDirection="35" windVelocity="021"
+    temperature="P01" windShear="02" />
+   <FlightLevel level="18000" windDirection="32" windVelocity="025"
+    temperature="M12" windShear="02" />
+   <FlightLevel level="24000" windDirection="31" windVelocity="029"
+    temperature="M27" windShear="03" />
+   <FlightLevel level="25000" windDirection="30" windVelocity="031"
+    temperature="M28" windShear="03" />
+   <FlightLevel level="29000" windDirection="30" windVelocity="046"
+    temperature="M38" windShear="05" />
+   <FlightLevel level="30000" windDirection="29" windVelocity="049"
+    temperature="M40" windShear="08" />
+   <FlightLevel level="31000" windDirection="29" windVelocity="058"
+    temperature="M42" windShear="08" />
+   <FlightLevel level="33000" windDirection="29" windVelocity="075"
+    temperature="M45" windShear="08" />
+   <FlightLevel level="34000" windDirection="29" windVelocity="082"
+    temperature="M47" windShear="09" />
+   <FlightLevel level="37000" windDirection="28" windVelocity="095"
+    temperature="M54" windShear="00" />
+   <FlightLevel level="39000" windDirection="28" windVelocity="087"
+    temperature="M55" windShear="04" />
+   <FlightLevel level="41000" windDirection="28" windVelocity="080"
+    temperature="M55" windShear="04" />
+   <FlightLevel level="45000" windDirection="28" windVelocity="067"
+    temperature="M57" windShear="02" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="059"
+    temperature="M61" windShear="01" />
+  </Checkpoint>
+  <Checkpoint name="IDVEL">
+   <FlightLevel level="09000" windDirection="33" windVelocity="018"
+    temperature="P07" windShear="02" />
+   <FlightLevel level="10000" windDirection="34" windVelocity="020"
+    temperature="P05" windShear="01" />
+   <FlightLevel level="12000" windDirection="34" windVelocity="021"
+    temperature="P01" windShear="01" />
+   <FlightLevel level="18000" windDirection="32" windVelocity="025"
+    temperature="M13" windShear="02" />
+   <FlightLevel level="24000" windDirection="31" windVelocity="028"
+    temperature="M28" windShear="02" />
+   <FlightLevel level="25000" windDirection="31" windVelocity="029"
+    temperature="M29" windShear="02" />
+   <FlightLevel level="29000" windDirection="30" windVelocity="040"
+    temperature="M39" windShear="04" />
+   <FlightLevel level="30000" windDirection="30" windVelocity="042"
+    temperature="M42" windShear="06" />
+   <FlightLevel level="31000" windDirection="29" windVelocity="048"
+    temperature="M43" windShear="05" />
+   <FlightLevel level="33000" windDirection="29" windVelocity="060"
+    temperature="M47" windShear="06" />
+   <FlightLevel level="34000" windDirection="29" windVelocity="065"
+    temperature="M48" windShear="06" />
+   <FlightLevel level="37000" windDirection="28" windVelocity="077"
+    temperature="M55" windShear="02" />
+   <FlightLevel level="39000" windDirection="28" windVelocity="077"
+    temperature="M55" windShear="01" />
+   <FlightLevel level="41000" windDirection="28" windVelocity="073"
+    temperature="M55" windShear="02" />
+   <FlightLevel level="45000" windDirection="28" windVelocity="065"
+    temperature="M57" windShear="02" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="056"
+    temperature="M60" windShear="02" />
+  </Checkpoint>
+  <Checkpoint name="XDX  ">
+   <FlightLevel level="09000" windDirection="32" windVelocity="020"
+    temperature="P07" windShear="02" />
+   <FlightLevel level="10000" windDirection="33" windVelocity="023"
+    temperature="P05" windShear="02" />
+   <FlightLevel level="12000" windDirection="33" windVelocity="024"
+    temperature="P01" windShear="01" />
+   <FlightLevel level="18000" windDirection="33" windVelocity="027"
+    temperature="M13" windShear="02" />
+   <FlightLevel level="24000" windDirection="31" windVelocity="029"
+    temperature="M28" windShear="01" />
+   <FlightLevel level="25000" windDirection="31" windVelocity="031"
+    temperature="M29" windShear="02" />
+   <FlightLevel level="29000" windDirection="30" windVelocity="039"
+    temperature="M40" windShear="03" />
+   <FlightLevel level="30000" windDirection="30" windVelocity="041"
+    temperature="M42" windShear="03" />
+   <FlightLevel level="31000" windDirection="30" windVelocity="045"
+    temperature="M44" windShear="04" />
+   <FlightLevel level="33000" windDirection="29" windVelocity="054"
+    temperature="M47" windShear="05" />
+   <FlightLevel level="34000" windDirection="29" windVelocity="058"
+    temperature="M49" windShear="04" />
+   <FlightLevel level="37000" windDirection="28" windVelocity="067"
+    temperature="M55" windShear="05" />
+   <FlightLevel level="39000" windDirection="28" windVelocity="075"
+    temperature="M55" windShear="02" />
+   <FlightLevel level="41000" windDirection="28" windVelocity="072"
+    temperature="M55" windShear="02" />
+   <FlightLevel level="45000" windDirection="28" windVelocity="064"
+    temperature="M56" windShear="02" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="054"
+    temperature="M60" windShear="02" />
+  </Checkpoint>
+  <Checkpoint name="TAO  ">
+   <FlightLevel level="09000" windDirection="32" windVelocity="024"
+    temperature="P07" windShear="04" />
+   <FlightLevel level="10000" windDirection="32" windVelocity="026"
+    temperature="P05" windShear="02" />
+   <FlightLevel level="12000" windDirection="33" windVelocity="027"
+    temperature=" 00" windShear="01" />
+   <FlightLevel level="18000" windDirection="33" windVelocity="029"
+    temperature="M13" windShear="02" />
+   <FlightLevel level="24000" windDirection="31" windVelocity="031"
+    temperature="M28" windShear="01" />
+   <FlightLevel level="25000" windDirection="31" windVelocity="032"
+    temperature="M30" windShear="01" />
+   <FlightLevel level="29000" windDirection="30" windVelocity="038"
+    temperature="M41" windShear="02" />
+   <FlightLevel level="30000" windDirection="30" windVelocity="039"
+    temperature="M43" windShear="02" />
+   <FlightLevel level="31000" windDirection="30" windVelocity="042"
+    temperature="M45" windShear="03" />
+   <FlightLevel level="33000" windDirection="29" windVelocity="048"
+    temperature="M48" windShear="04" />
+   <FlightLevel level="34000" windDirection="29" windVelocity="050"
+    temperature="M50" windShear="03" />
+   <FlightLevel level="37000" windDirection="28" windVelocity="061"
+    temperature="M55" windShear="04" />
+   <FlightLevel level="39000" windDirection="28" windVelocity="068"
+    temperature="M55" windShear="03" />
+   <FlightLevel level="41000" windDirection="28" windVelocity="070"
+    temperature="M56" windShear="01" />
+   <FlightLevel level="45000" windDirection="28" windVelocity="063"
+    temperature="M56" windShear="02" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="052"
+    temperature="M60" windShear="02" />
+  </Checkpoint>
+  <Checkpoint name="XIVID">
+   <FlightLevel level="09000" windDirection="31" windVelocity="025"
+    temperature="P07" windShear="03" />
+   <FlightLevel level="10000" windDirection="32" windVelocity="028"
+    temperature="P04" windShear="02" />
+   <FlightLevel level="12000" windDirection="32" windVelocity="029"
+    temperature=" 00" windShear="01" />
+   <FlightLevel level="18000" windDirection="33" windVelocity="032"
+    temperature="M14" windShear="02" />
+   <FlightLevel level="24000" windDirection="31" windVelocity="034"
+    temperature="M28" windShear="01" />
+   <FlightLevel level="25000" windDirection="31" windVelocity="035"
+    temperature="M30" windShear="01" />
+   <FlightLevel level="29000" windDirection="30" windVelocity="039"
+    temperature="M41" windShear="02" />
+   <FlightLevel level="30000" windDirection="30" windVelocity="040"
+    temperature="M43" windShear="02" />
+   <FlightLevel level="31000" windDirection="30" windVelocity="042"
+    temperature="M45" windShear="03" />
+   <FlightLevel level="33000" windDirection="29" windVelocity="046"
+    temperature="M49" windShear="03" />
+   <FlightLevel level="34000" windDirection="29" windVelocity="048"
+    temperature="M50" windShear="04" />
+   <FlightLevel level="37000" windDirection="29" windVelocity="059"
+    temperature="M55" windShear="04" />
+   <FlightLevel level="39000" windDirection="28" windVelocity="066"
+    temperature="M56" windShear="05" />
+   <FlightLevel level="41000" windDirection="28" windVelocity="068"
+    temperature="M56" windShear="00" />
+   <FlightLevel level="45000" windDirection="28" windVelocity="061"
+    temperature="M56" windShear="02" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="051"
+    temperature="M60" windShear="02" />
+  </Checkpoint>
+  <Checkpoint name="FD   ">
+   <FlightLevel level="09000" windDirection="31" windVelocity="025"
+    temperature="P07" windShear="03" />
+   <FlightLevel level="10000" windDirection="32" windVelocity="029"
+    temperature="P04" windShear="02" />
+   <FlightLevel level="12000" windDirection="32" windVelocity="030"
+    temperature=" 00" windShear="01" />
+   <FlightLevel level="18000" windDirection="32" windVelocity="035"
+    temperature="M14" windShear="01" />
+   <FlightLevel level="24000" windDirection="31" windVelocity="037"
+    temperature="M28" windShear="02" />
+   <FlightLevel level="25000" windDirection="31" windVelocity="038"
+    temperature="M30" windShear="02" />
+   <FlightLevel level="29000" windDirection="30" windVelocity="041"
+    temperature="M41" windShear="02" />
+   <FlightLevel level="30000" windDirection="30" windVelocity="041"
+    temperature="M43" windShear="01" />
+   <FlightLevel level="31000" windDirection="30" windVelocity="043"
+    temperature="M45" windShear="02" />
+   <FlightLevel level="33000" windDirection="29" windVelocity="047"
+    temperature="M49" windShear="03" />
+   <FlightLevel level="34000" windDirection="29" windVelocity="048"
+    temperature="M51" windShear="03" />
+   <FlightLevel level="37000" windDirection="29" windVelocity="058"
+    temperature="M55" windShear="04" />
+   <FlightLevel level="39000" windDirection="28" windVelocity="064"
+    temperature="M56" windShear="04" />
+   <FlightLevel level="41000" windDirection="28" windVelocity="066"
+    temperature="M56" windShear="00" />
+   <FlightLevel level="45000" windDirection="28" windVelocity="059"
+    temperature="M56" windShear="02" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="049"
+    temperature="M60" windShear="02" />
+  </Checkpoint>
+  <Checkpoint name="TEKAM">
+   <FlightLevel level="09000" windDirection="31" windVelocity="026"
+    temperature="P06" windShear="04" />
+   <FlightLevel level="10000" windDirection="31" windVelocity="030"
+    temperature="P04" windShear="02" />
+   <FlightLevel level="12000" windDirection="31" windVelocity="032"
+    temperature="M01" windShear="02" />
+   <FlightLevel level="18000" windDirection="32" windVelocity="040"
+    temperature="M14" windShear="01" />
+   <FlightLevel level="24000" windDirection="31" windVelocity="042"
+    temperature="M29" windShear="02" />
+   <FlightLevel level="25000" windDirection="31" windVelocity="042"
+    temperature="M30" windShear="02" />
+   <FlightLevel level="29000" windDirection="31" windVelocity="043"
+    temperature="M41" windShear="02" />
+   <FlightLevel level="30000" windDirection="30" windVelocity="044"
+    temperature="M44" windShear="04" />
+   <FlightLevel level="31000" windDirection="30" windVelocity="045"
+    temperature="M46" windShear="04" />
+   <FlightLevel level="33000" windDirection="29" windVelocity="047"
+    temperature="M49" windShear="03" />
+   <FlightLevel level="34000" windDirection="29" windVelocity="048"
+    temperature="M51" windShear="03" />
+   <FlightLevel level="37000" windDirection="29" windVelocity="056"
+    temperature="M56" windShear="04" />
+   <FlightLevel level="39000" windDirection="28" windVelocity="061"
+    temperature="M56" windShear="04" />
+   <FlightLevel level="41000" windDirection="28" windVelocity="062"
+    temperature="M56" windShear="03" />
+   <FlightLevel level="45000" windDirection="29" windVelocity="057"
+    temperature="M55" windShear="03" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="047"
+    temperature="M59" windShear="02" />
+  </Checkpoint>
+  <Checkpoint name="IGDEG">
+   <FlightLevel level="09000" windDirection="31" windVelocity="027"
+    temperature="P06" windShear="04" />
+   <FlightLevel level="10000" windDirection="31" windVelocity="031"
+    temperature="P03" windShear="02" />
+   <FlightLevel level="12000" windDirection="31" windVelocity="034"
+    temperature="M01" windShear="01" />
+   <FlightLevel level="18000" windDirection="32" windVelocity="042"
+    temperature="M14" windShear="01" />
+   <FlightLevel level="24000" windDirection="31" windVelocity="044"
+    temperature="M29" windShear="00" />
+   <FlightLevel level="25000" windDirection="31" windVelocity="044"
+    temperature="M30" windShear="00" />
+   <FlightLevel level="29000" windDirection="31" windVelocity="046"
+    temperature="M42" windShear="02" />
+   <FlightLevel level="30000" windDirection="31" windVelocity="046"
+    temperature="M44" windShear="04" />
+   <FlightLevel level="31000" windDirection="30" windVelocity="047"
+    temperature="M46" windShear="02" />
+   <FlightLevel level="33000" windDirection="30" windVelocity="050"
+    temperature="M50" windShear="02" />
+   <FlightLevel level="34000" windDirection="29" windVelocity="051"
+    temperature="M52" windShear="03" />
+   <FlightLevel level="37000" windDirection="29" windVelocity="055"
+    temperature="M56" windShear="02" />
+   <FlightLevel level="39000" windDirection="29" windVelocity="060"
+    temperature="M56" windShear="02" />
+   <FlightLevel level="41000" windDirection="29" windVelocity="059"
+    temperature="M56" windShear="01" />
+   <FlightLevel level="45000" windDirection="29" windVelocity="055"
+    temperature="M55" windShear="03" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="046"
+    temperature="M59" windShear="02" />
+  </Checkpoint>
+  <Checkpoint name="NIXEP">
+   <FlightLevel level="09000" windDirection="31" windVelocity="027"
+    temperature="P06" windShear="03" />
+   <FlightLevel level="10000" windDirection="31" windVelocity="031"
+    temperature="P03" windShear="02" />
+   <FlightLevel level="12000" windDirection="31" windVelocity="034"
+    temperature="M01" windShear="01" />
+   <FlightLevel level="18000" windDirection="32" windVelocity="042"
+    temperature="M14" windShear="01" />
+   <FlightLevel level="24000" windDirection="31" windVelocity="045"
+    temperature="M29" windShear="01" />
+   <FlightLevel level="25000" windDirection="31" windVelocity="045"
+    temperature="M31" windShear="01" />
+   <FlightLevel level="29000" windDirection="31" windVelocity="047"
+    temperature="M42" windShear="01" />
+   <FlightLevel level="30000" windDirection="31" windVelocity="048"
+    temperature="M44" windShear="01" />
+   <FlightLevel level="31000" windDirection="31" windVelocity="049"
+    temperature="M47" windShear="02" />
+   <FlightLevel level="33000" windDirection="30" windVelocity="052"
+    temperature="M50" windShear="03" />
+   <FlightLevel level="34000" windDirection="30" windVelocity="053"
+    temperature="M52" windShear="01" />
+   <FlightLevel level="37000" windDirection="29" windVelocity="059"
+    temperature="M56" windShear="02" />
+   <FlightLevel level="39000" windDirection="29" windVelocity="056"
+    temperature="M56" windShear="01" />
+   <FlightLevel level="41000" windDirection="29" windVelocity="055"
+    temperature="M56" windShear="00" />
+   <FlightLevel level="45000" windDirection="29" windVelocity="054"
+    temperature="M55" windShear="03" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="045"
+    temperature="M59" windShear="02" />
+  </Checkpoint>
+  <Checkpoint name="DOBGA">
+   <FlightLevel level="09000" windDirection="31" windVelocity="027"
+    temperature="P05" windShear="03" />
+   <FlightLevel level="10000" windDirection="31" windVelocity="030"
+    temperature="P03" windShear="02" />
+   <FlightLevel level="12000" windDirection="31" windVelocity="033"
+    temperature="M01" windShear="01" />
+   <FlightLevel level="18000" windDirection="32" windVelocity="042"
+    temperature="M15" windShear="01" />
+   <FlightLevel level="24000" windDirection="31" windVelocity="046"
+    temperature="M29" windShear="01" />
+   <FlightLevel level="25000" windDirection="31" windVelocity="046"
+    temperature="M31" windShear="01" />
+   <FlightLevel level="29000" windDirection="31" windVelocity="049"
+    temperature="M42" windShear="01" />
+   <FlightLevel level="30000" windDirection="31" windVelocity="050"
+    temperature="M45" windShear="01" />
+   <FlightLevel level="31000" windDirection="31" windVelocity="051"
+    temperature="M47" windShear="03" />
+   <FlightLevel level="33000" windDirection="30" windVelocity="054"
+    temperature="M51" windShear="03" />
+   <FlightLevel level="34000" windDirection="30" windVelocity="056"
+    temperature="M52" windShear="02" />
+   <FlightLevel level="37000" windDirection="29" windVelocity="060"
+    temperature="M56" windShear="03" />
+   <FlightLevel level="39000" windDirection="29" windVelocity="055"
+    temperature="M56" windShear="02" />
+   <FlightLevel level="41000" windDirection="29" windVelocity="054"
+    temperature="M55" windShear="00" />
+   <FlightLevel level="45000" windDirection="29" windVelocity="053"
+    temperature="M55" windShear="03" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="044"
+    temperature="M59" windShear="02" />
+  </Checkpoint>
+  <Checkpoint name="ZYTL ">
+   <FlightLevel level="09000" windDirection="32" windVelocity="026"
+    temperature="P05" windShear="03" />
+   <FlightLevel level="10000" windDirection="31" windVelocity="029"
+    temperature="P03" windShear="03" />
+   <FlightLevel level="12000" windDirection="31" windVelocity="032"
+    temperature="M01" windShear="02" />
+   <FlightLevel level="18000" windDirection="32" windVelocity="042"
+    temperature="M15" windShear="01" />
+   <FlightLevel level="24000" windDirection="31" windVelocity="048"
+    temperature="M30" windShear="01" />
+   <FlightLevel level="25000" windDirection="31" windVelocity="048"
+    temperature="M31" windShear="01" />
+   <FlightLevel level="29000" windDirection="31" windVelocity="052"
+    temperature="M43" windShear="01" />
+   <FlightLevel level="30000" windDirection="31" windVelocity="053"
+    temperature="M45" windShear="01" />
+   <FlightLevel level="31000" windDirection="31" windVelocity="054"
+    temperature="M47" windShear="03" />
+   <FlightLevel level="33000" windDirection="30" windVelocity="057"
+    temperature="M51" windShear="03" />
+   <FlightLevel level="34000" windDirection="30" windVelocity="059"
+    temperature="M52" windShear="04" />
+   <FlightLevel level="37000" windDirection="29" windVelocity="056"
+    temperature="M55" windShear="03" />
+   <FlightLevel level="39000" windDirection="29" windVelocity="052"
+    temperature="M55" windShear="01" />
+   <FlightLevel level="41000" windDirection="29" windVelocity="052"
+    temperature="M55" windShear="00" />
+   <FlightLevel level="45000" windDirection="29" windVelocity="052"
+    temperature="M55" windShear="02" />
+   <FlightLevel level="50000" windDirection="28" windVelocity="043"
+    temperature="M58" windShear="02" />
+  </Checkpoint>
+  <Summary>
+        12000   18000   24000   30000   34000   39000   45000   50000
+ALDAP  3527P03 3033M10 2855M23 2976M35 2891M44 2893M52 2882M60 2764M67
+IBEGI  3526P03 3132M10 2951M23 2975M36 2893M44 2893M52 2880M60 2764M66
+ODULO  3523P02 3226M11 2941M25 2971M37 2896M45 2894M53 2874M58 2864M63
+GORPI  3522P01 3225M12 3033M26 2958M39 2895M45 2893M54 2870M58 2862M62
+SAGUT  3521P01 3225M12 3129M27 2949M40 2982M47 2887M55 2867M57 2859M61
+IDVEL  3421P01 3225M13 3128M28 3042M42 2965M48 2877M55 2865M57 2856M60
+XDX    3324P01 3327M13 3129M28 3041M42 2958M49 2875M55 2864M56 2854M60
+TAO    3327P00 3329M13 3131M28 3039M43 2950M50 2868M55 2863M56 2852M60
+XIVID  3229P00 3332M14 3134M28 3040M43 2948M50 2866M56 2861M56 2851M60
+FD     3230P00 3235M14 3137M28 3041M43 2948M51 2864M56 2859M56 2849M60
+TEKAM  3132M01 3240M14 3142M29 3044M44 2948M51 2861M56 2957M55 2847M59
+IGDEG  3134M01 3242M14 3144M29 3146M44 2951M52 2960M56 2955M55 2846M59
+NIXEP  3134M01 3242M14 3145M29 3148M44 3053M52 2956M56 2954M55 2845M59
+DOBGA  3133M01 3242M15 3146M29 3150M45 3056M52 2955M56 2953M55 2844M59
+ZYTL   3132M01 3242M15 3148M30 3153M45 3059M52 2952M55 2952M55 2843M58
+  </Summary>
+  <SummaryWithFrequencies>
+                   FL 300        FL340          FL380          FL420
+
+ODULO         P07/29071M051   P07/28096M058   P05/28099M059   M01/28087M052
+GORPI         P05/29058M043   P07/28095M063   P03/28098M062   P02/28084M053
+SAGUT         P04/29049M037   P05/29082M055   P02/28091M057   P02/28080M049
+IDVEL         P02/30042M032   P04/29065M043   P02/28079M049   P02/28073M045
+XDX    110.4  P02/30041M032   P03/29058M039   P02/28070M044   P02/28072M045
+TAO    117.5  P01/30039M014   P02/29050M008   P01/28065M006   P01/28070M007
+XIVID         P01/30040M012   P02/29048M005   P01/28062P000   P01/28068M001
+FD     298.0  P01/30041M011   P01/29048M003   P01/28061P001   P01/28066P000
+TEKAM         P00/30044M020   P01/29048M011   P00/29058M010   P01/28062M010
+IGDEG         P00/31046M026   P00/29051M019   P00/29056M014   P01/29059M016
+NIXEP         P00/31048M009   P00/30053P001   P01/29060P006   P01/29055P011
+DOBGA         M01/31050P020   P00/30056P032   P01/29058P040   P02/29054P040
+  </SummaryWithFrequencies>
+ </WindReport>
+ <FMSFlightPlan>
+FA4B
+AN B6619/GL
+- FPN/FNDKH1161/RP:DA:ZSPD:AA:ZYTL:F:ALDAP,N31375E122222.B221.
+XDX,N35587E120174.W174.FD,N36559E120378.W172.IGDEG,N38004E120483
+.W173.NIXEP,N38150E120593..DOBGA,N38248E121275
+ </FMSFlightPlan>
+ <FMSFlightPlanVersion2>
+9165
+AN B6619/GL
+- FPN/FNDKH1161/RP:DA:ZSPD:AA:ZYTL:F:ALDAP,N31375E122222.B221.
+DX.
+XDX,N35587E120174.W174.FD,N36559E120378.W172.IGDEG,N38004E120483
+.W173.NIXEP..DOBGA,N38248E121275
+ </FMSFlightPlanVersion2>
+ <SmithsFMSFlightPlan>
+:CR:ZSPDZYTL:F:ALDAP.B221.XDX.W174.FD.W172.IGDEG.W173.NIXEP..DOBGA
+ </SmithsFMSFlightPlan>
+ <FMSWindUplink>
+AN B6619/GL
+2D90
+- PWI/WD290,ODULO,293057,290M36.GORPI,294052,290M37.SAGUT,298040,
+290M39.IDVEL,299040,290M40.XDX,301038,290M40.TAO,302038,290M41.
+XIVID,303040,290M41.FD,304042,290M41.TEKAM,306045,290M42.IGDEG,
+308047,290M42.NIXEP,309048,290M42.DOBGA,309050,290M42/WD330,ODULO,
+285088,330M44.GORPI,286086,330M44.SAGUT,287062,330M46.IDVEL,288058
+,330M47.XDX,290050,330M48.TAO,291046,330M49.XIVID,292046,330M49.FD
+,292047,330M49.TEKAM,293048,330M50.IGDEG,298051,330M50.NIXEP,
+300053,330M50.DOBGA,300056,330M51/WD370,ODULO,279104,370M51.GORPI,
+279104,370M52.SAGUT,281080,370M55.IDVEL,282074,370M55.XDX,284063,
+370M55.TAO,284060,370M55.XIVID,285059,370M55.FD,285057,370M55.
+TEKAM,286055,370M56.IGDEG,292058,370M56.NIXEP,294060,370M56.DOBGA,
+292059,370M55/WD390,ODULO,282093,390M55.GORPI,282093,390M54.SAGUT,
+281079,390M55.IDVEL,282075,390M55.XDX,282070,390M55.TAO,282067,
+390M55.XIVID,283065,390M56.FD,283063,390M56.TEKAM,285059,390M56.
+IGDEG,286057,390M56.NIXEP,286055,390M56.DOBGA,285055,390M55/WD410,
+ODULO,281085,410M57.GORPI,281084,410M55.SAGUT,282074,410M55.IDVEL,
+282072,410M55.XDX,283071,410M56.TAO,283069,410M56.XIVID,283067,
+410M56.FD,284064,410M56.TEKAM,286060,410M56.IGDEG,286056,410M56.
+NIXEP,286055,410M55
+7994
+- PWI/WD410,DOBGA,285054,410M55
+ </FMSWindUplink>
+
+  <MountainDriftdown_TerrainClearance>
+
+  </MountainDriftdown_TerrainClearance>
+  <MountainDriftdown_TerrainClearanceVersion2Header>
+  </MountainDriftdown_TerrainClearanceVersion2Header>
+  <MountainDriftdown_TerrainClearanceVersion2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </MountainDriftdown_TerrainClearanceVersion2>
+ <Emissions>
+  <EU-EmissionsTradingScheme>
+   <Distance units="km" value="      " />
+    <CO2 units="metric tonnes">
+     <TaxiOut fuelTypeSet="N"></TaxiOut>
+     <Enroute fuelTypeSet="N"></Enroute>
+     <TaxiIn fuelTypeSet="N"></TaxiIn>
+    </CO2>
+  </EU-EmissionsTradingScheme>
+ </Emissions>
+ <B43_log value="
+ "/>
+ <CodedDepartureRoutes>
+  <InsertJPEXReport/>
+ </CodedDepartureRoutes>
+</FlightPlan>

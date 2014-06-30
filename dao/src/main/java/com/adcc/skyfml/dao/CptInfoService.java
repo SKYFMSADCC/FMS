@@ -1,6 +1,5 @@
 package com.adcc.skyfml.dao;
 
-
 import com.adcc.skyfml.model.CptInfo;
 
 import java.util.List;
@@ -14,6 +13,8 @@ import java.util.List;
 public interface CptInfoService {
     // 增加
     public CptInfo save(CptInfo cptInfo);
+    public Iterable<CptInfo> save(Iterable<CptInfo> cptInfo);
+
     // 更新
     public CptInfo update(CptInfo cptInfo);
     // 计算总记录数

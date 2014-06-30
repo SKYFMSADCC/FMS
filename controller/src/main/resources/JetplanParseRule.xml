@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Jetplan解析规则配置文件-->
+<JetplanParseRule>
+	<!--唯一对象解析路径配置及取值方式配置-->
+	<uniqueObject>
+		<!--飞行计划唯一标识-->
+		<planId attributeName="planNumber">/FlightPlan/Info</planId>
+		<!--飞行计划生成时间-->
+		<planDate attributeName="computedAt">/FlightPlan/Info</planDate>
+		<!--航班号-->
+	  	<flightId attributeName="flightIdentification">/FlightPlan/FilingStrip</flightId>
+	  	<!--机尾号-->
+		<aircraftId attributeName="aircraftID">/FlightPlan/FilingStrip</aircraftId>
+		<!--起飞机场四字码-->
+		<dep attributeName="coordinationFix">/FlightPlan/FilingStrip</dep>
+		<!--落地机场四字码-->
+		<arr attributeName="pointOfArrival">/FlightPlan/FilingStrip</arr>
+	</uniqueObject>
+  
+	<!--“航路点位置信息”解析路径配置及取值方式配置-->
+	<cptPosInfo attributeName="name" prefixPath="/FlightPlan/Checkpoints/Checkpoint">
+	  	<!--经度-->
+	  	<lon attributeName="minutes.seconds">./Coord/LonVersion2</lon>
+		<!--纬度-->
+		<lat attributeName="minutes.seconds">./Coord/LatVersion2</lat>
+	</cptPosInfo>
+	
+	<!--“航路点风温信息”解析路径配置及取值方式配置-->
+	<cptWindTempInfo attributeName="name" prefixPath="/FlightPlan/WindReport/Checkpoint">
+		<!--风向-->
+		<windDir attributeName="windDirection">./FlightLevel</windDir>
+		<!--风速-->
+		<windVel attributeName="windVelocity">./FlightLevel</windVel>
+		<!--风温-->
+		<windTep attributeName="temperature">./FlightLevel</windTep>
+		<!--高度层-->
+		<alt attributeName="level">./FlightLevel</alt>
+	</cptWindTempInfo>
+</JetplanParseRule>

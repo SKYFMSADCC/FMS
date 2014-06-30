@@ -8,6 +8,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.adcc.skyfml.dao.CptInfoService;
+import com.adcc.skyfml.dao.PlanCptWdService;
+import com.adcc.skyfml.model.CptInfo;
+import com.adcc.skyfml.model.PlanCptWd;
+import com.adcc.skyfml.service.JetplanParseRuleVO;
+import com.adcc.skyfml.util.DateUtil;
+import com.adcc.skyfml.util.SysConstants;
 import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -15,6 +22,8 @@ import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.dom4j.io.XMLWriter;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  *
@@ -25,14 +34,15 @@ import org.dom4j.io.XMLWriter;
  * <P>Version: v1.0
  * <P>History:
  */
-public class JetplanParseController implements IWindTempController
-{X
+public class JetplanParseController implements IFlyPlanParseController
+{
     List cptInfoList = new ArrayList();
     List planCptWdList = new ArrayList();
 
     JetplanParseRuleVO paramVO = new JetplanParseRuleVO();
 
-    OraclDao dao = new OraclDao();
+    CptInfoService cptInfoService = null;
+    PlanCptWdService planCptWdService = null;
 
     private static Logger debugLogger = Logger.getLogger("forDebug");
     private static Logger errorLogger = Logger.getLogger("forError");
@@ -42,6 +52,12 @@ public class JetplanParseController implements IWindTempController
 
     // 读取配置文件，加载解析Jetplan所需的参数信息
     public JetplanParseController() {
+
+        //        System.out.println("-----------------\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n-----------------\r\n");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationcontext-dao.xml");
+        cptInfoService = ctx.getBean("cptInfoService", CptInfoService.class);
+        planCptWdService = ctx.getBean("planCptWdService", PlanCptWdService.class);
+
         java.io.File fConfig = null;
         fConfig = new java.io.File("config/JetplanParseRule.xml");
 
@@ -147,7 +163,7 @@ public class JetplanParseController implements IWindTempController
 
                 CptInfo cptInfoRecord = new CptInfo();
                 cptInfoRecord.setPlanId(flyPlan.attributeValue(paramVO.getPlanIdAttribute()));
-                cptInfoRecord.setPlanDate(planCreateTime);
+                cptInfoRecord.setPlanDate(DateUtil.StrToDate(planCreateTime, SysConstants.FORMAT_DATETIME_FULL) );
                 cptInfoRecord.setAircraftId(flyInfo.attributeValue(paramVO.getAircraftIdAttribute()));
                 cptInfoRecord.setFlightId(flyInfo.attributeValue(paramVO.getFlightIdAttribute()));
                 cptInfoRecord.setCptName(cptPosNode.attributeValue(paramVO.getCptPosAttribute()));
@@ -201,9 +217,9 @@ public class JetplanParseController implements IWindTempController
     public void saveToDB() {
         // TODO Auto-generated method stub
         // CPT_INFO 数据入库
-        dao.insertCptInfo(cptInfoList);
+        cptInfoService.save(cptInfoList);
         // PLAN_CPT_WD 数据入库
-        dao.insertPlanCptWd(planCptWdList);
+        planCptWdService.save(planCptWdList);
     }
 
 //    public static void parserOnenoteXml(String fileName)

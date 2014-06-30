@@ -26,6 +26,11 @@ public class PlanCptWdServiceImpl implements PlanCptWdService {
         return planCptWdDao.save(planCptWd);
     }
 
+    @Transactional
+    public Iterable<PlanCptWd> save(Iterable<PlanCptWd> planCptWdIter) {
+        return planCptWdDao.save(planCptWdIter);
+    }
+
     // 新增 + 更新
     @Transactional
     public PlanCptWd update(PlanCptWd planCptWd) {

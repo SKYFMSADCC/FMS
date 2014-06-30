@@ -1,8 +1,6 @@
 package com.adcc.skyfml.dao;
 
-
 import com.adcc.skyfml.model.PlanCptWd;
-
 import java.util.List;
 
 
@@ -14,6 +12,7 @@ import java.util.List;
 public interface PlanCptWdService {
     // 增加
     public PlanCptWd save(PlanCptWd planCptWd);
+    public Iterable<PlanCptWd> save(Iterable<PlanCptWd> planCptWdIter);
     // 更新
     public PlanCptWd update(PlanCptWd planCptWd);
     // 计算总记录数

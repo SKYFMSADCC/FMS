@@ -25,6 +25,11 @@ public class CptInfoServiceImpl implements CptInfoService {
         return cptInfoDao.save(cptInfo);
     }
 
+    @Transactional
+    public Iterable<CptInfo> save(Iterable<CptInfo> cptInfo) {
+        return cptInfoDao.save(cptInfo);
+    }
+
     // 新增 + 更新
     @Transactional
     public CptInfo update(CptInfo cptInfo) {

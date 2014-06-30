@@ -10,5 +10,13 @@
     <artifactId>service.config</artifactId>
     <modelVersion>4.0.0</modelVersion>
 
-    
+    <!--
+    <dependencies>
+        <dependency>
+            <groupId>skyfml</groupId>
+            <artifactId>model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    -->
 </project>

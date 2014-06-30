@@ -81,7 +81,7 @@ public class WindController implements Observer {
                 logger.info("报文格式符合要求，进行解析处理!");
                 Request request = downRequestWind.parse(aContent);
                 logger.info("报文解析完成，向Webservice服务进行风温请求!");
-                Response response = windService.getWind(request);
+                com.adcc.skyfml.core.Response response = windService.getWind(request);
                 logger.info("风温数据请求完成，构造上传报文!");
                 String upMsg = fmlMsgBuilder.build(response);
                 logger.info("上传报文构造完成：" + upMsg);
