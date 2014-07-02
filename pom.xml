@@ -16,6 +16,7 @@
         <module>util</module>
         <module>service</module>
         <module>webservice</module>
+        <module>mqAccessUtil</module>
     </modules>
 
 
@@ -105,6 +106,20 @@
             <artifactId>ojdbc14</artifactId>
             <version>10.2.0.4.0</version>
         </dependency>
+
+<dependency>
+    <groupId>jaxen</groupId>
+    <artifactId>jaxen</artifactId>
+    <version>1.1-beta-6</version>
+</dependency>
+        <!--
+        <dependency>
+            <groupId>ionic</groupId>
+            <artifactId>Msmq</artifactId>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/MsmqJava.jar</systemPath>
+        </dependency>
+        -->
     </dependencies>
 
 </project>

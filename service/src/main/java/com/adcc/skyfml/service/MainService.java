@@ -1,7 +1,7 @@
 package com.adcc.skyfml.service;
 
-import com.adcc.skyfml.util.ActivemqReceiver;
-import com.adcc.skyfml.util.MsmqReceiver;
+import com.adcc.skyfml.mqAccessUtil.ActivemqReceiver;
+import com.adcc.skyfml.mqAccessUtil.MsmqReceiver;
 import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

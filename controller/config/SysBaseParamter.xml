@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<baseParamter>
+    <windTempInterfaceService>
+        <!--指定生成航班计划的目录-->
+        <scanDir>C:\Users\GuoXY\Desktop\FlyPlanData</scanDir>
+        <!--存放无法解析的飞行计划文件-->
+        <backupDir>C:\Users\GuoXY\Desktop\BakupPlanData</backupDir>
+    </windTempInterfaceService>
+</baseParamter>

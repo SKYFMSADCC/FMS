@@ -24,7 +24,7 @@
         <property name="connectionFactory">
             <ref local="jmsFactory" />
         </property>
-        <property name="defaultDestinationName" value="skyfml.topic.wind" />
+        <property name="defaultDestinationName" value="com.adcc.skyfml.mqAccessUtil;.topic.wind" />
         <!-- 区别它采用的模式为false是p2p为true是订阅 -->
         <property name="pubSubDomain" value="true" />
     </bean>
@@ -66,7 +66,7 @@
 
     <!-- MQ消息接收类，负责获取下行报文 -->
     <bean id="messageReceiver"
-          class="com.adcc.skyfml.util.ActivemqReceiver">
+          class="com.adcc.skyfml.mqAccessUtil.ActivemqReceiver">
         <property name="jmsTemplate" ref="jmsTemplate"></property>
         <property name="windController" ref="windController"></property>
         <property name="destination" ref="mqTopic"></property>
@@ -74,21 +74,21 @@
 
     <!-- MQ消息发送类，负责发送上行报文 -->
     <bean id="messageSender"
-          class="com.adcc.skyfml.util.ActivemqSender">
+          class="com.adcc.skyfml.mqAccessUtil.ActivemqSender">
         <property name="jmsTemplate" ref="jmsTemplateQueue"></property>
         <property name="destination" ref="mqQueue"></property>
     </bean>
 
     <!-- MQ消息接收类，负责获取下行报文 -->
     <bean id="messageMsmqReceiver"
-          class="com.adcc.skyfml.util.MsmqReceiver">
+          class="com.adcc.skyfml.mqAccessUtil.MsmqReceiver">
         <property name="fullname" value="DIRECT=OS:.\private$\downqueue"></property>
         <property name="windController" ref="windController"></property>
     </bean>
 
     <!-- MQ消息发送类，负责发送上行报文 -->
     <bean id="messageMsmqSender"
-          class="com.adcc.skyfml.util.MsmqSender">
+          class="com.adcc.skyfml.mqAccessUtil.MsmqSender">
         <property name="fullname" value="DIRECT=OS:.\private$\upqueue"></property>
     </bean>
 

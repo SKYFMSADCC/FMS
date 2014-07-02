@@ -17,7 +17,13 @@
         <option value="$PROJECT_DIR$/service.config/pom.xml" />
         <option value="$PROJECT_DIR$/webservice/pom.xml" />
         <option value="$PROJECT_DIR$/dao.mysqlimpl/pom.xml" />
+        <option value="$PROJECT_DIR$/mqAccessUtil/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/MQAcessUtil/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">

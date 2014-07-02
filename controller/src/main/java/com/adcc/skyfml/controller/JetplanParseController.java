@@ -1,12 +1,7 @@
 package com.adcc.skyfml.controller;
 
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 import com.adcc.skyfml.dao.CptInfoService;
 import com.adcc.skyfml.dao.PlanCptWdService;
@@ -14,14 +9,13 @@ import com.adcc.skyfml.model.CptInfo;
 import com.adcc.skyfml.model.PlanCptWd;
 import com.adcc.skyfml.service.JetplanParseRuleVO;
 import com.adcc.skyfml.util.DateUtil;
+import com.adcc.skyfml.util.ObjectUtil;
 import com.adcc.skyfml.util.SysConstants;
 import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
-import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-import org.dom4j.io.XMLWriter;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -40,6 +34,7 @@ public class JetplanParseController implements IFlyPlanParseController
     List planCptWdList = new ArrayList();
 
     JetplanParseRuleVO paramVO = new JetplanParseRuleVO();
+    Map<String, String> mapAirlinesCodes = new HashMap<String, String>();
 
     CptInfoService cptInfoService = null;
     PlanCptWdService planCptWdService = null;
@@ -58,12 +53,22 @@ public class JetplanParseController implements IFlyPlanParseController
         cptInfoService = ctx.getBean("cptInfoService", CptInfoService.class);
         planCptWdService = ctx.getBean("planCptWdService", PlanCptWdService.class);
 
-        java.io.File fConfig = null;
-        fConfig = new java.io.File("config/JetplanParseRule.xml");
+        java.io.File fParseRule = null;
+        fParseRule = new java.io.File("controller/config/JetplanParseRule.xml");
 
         final SAXReader reader = new SAXReader();
         try {
-            final Document paraseRulenDoc = reader.read(fConfig);
+            final Document paraseRulenDoc = reader.read(fParseRule);
+
+            List airlineCodeList = paraseRulenDoc.selectNodes("/JetplanParseRule/AirlinesCodes/AirlineCode");
+            Iterator it = airlineCodeList.iterator();
+            while(it.hasNext()) {
+                Element airlinesCode = (Element) it.next();
+//                System.out.println(airlinesCode.attributeValue("id") + " : "  + airlinesCode.getTextTrim());
+                mapAirlinesCodes.put(airlinesCode.attributeValue("id"), airlinesCode.getTextTrim());
+//                System.out.println("--" + mapAirlinesCodes.get("CCA") + "--");
+            }
+
             Element uniqueObject = (Element)paraseRulenDoc.selectSingleNode("/JetplanParseRule/uniqueObject/planId");
             paramVO.setPlanIdAttribute(uniqueObject.attributeValue("attributeName"));
             paramVO.setPlanIdPath(uniqueObject.getTextTrim());
@@ -74,6 +79,7 @@ public class JetplanParseController implements IFlyPlanParseController
             uniqueObject = (Element)paraseRulenDoc.selectSingleNode("/JetplanParseRule/uniqueObject/flightId");
             paramVO.setFlightIdAttribute(uniqueObject.attributeValue("attributeName"));
             paramVO.setFlightIdPath(uniqueObject.getTextTrim());
+
             uniqueObject = (Element)paraseRulenDoc.selectSingleNode("/JetplanParseRule/uniqueObject/aircraftId");
             paramVO.setAircraftIdAttribute(uniqueObject.attributeValue("attributeName"));
             paramVO.setAircraftIdPath(uniqueObject.getTextTrim());
@@ -117,31 +123,30 @@ public class JetplanParseController implements IFlyPlanParseController
     }
 
     @Override
-    public void parseDataSource(File fDataSource) {
+    public boolean parseDataSource(File fDataSource) {
         // TODO Auto-generated method stub
-        SAXReader reader = new SAXReader();
+        SAXReader readerParseRule = new SAXReader();
         try {
-            Document jetplanDoc = reader.read(fDataSource);
+            Document jetplanDoc = readerParseRule.read(fDataSource);
 
 			/*生成CPT_INFO数据*/
-            // 飞行计划、计划生成时间
+            // 飞行计划、计划生成时间在相同的节点内
             Element flyPlan = (Element)jetplanDoc.selectSingleNode(paramVO.getPlanIdPath());
 //			System.out.println(flyPlan.getName() + "-->" + flyPlan.attributeValue(paramVO.getPlanIdAttribute()));
-
-            flyPlan = (Element)jetplanDoc.selectSingleNode(paramVO.getPlanDatePath());
+//            flyPlan = (Element)jetplanDoc.selectSingleNode(paramVO.getPlanDatePath());
             String planCreateTime = flyPlan.attributeValue(paramVO.getPlanDateAttribute());
             planCreateTime = planCreateTime.replace('T', ' ');
             planCreateTime = planCreateTime.replace('Z', ' ');
 //			System.out.println(flyPlan.getName() + "-->" + planCreateTime);
 
-            // 航班号、机尾号、起飞机场、落地机场
+            // 航班号、机尾号、起飞机场、落地机场在相同的节点内
             Element flyInfo = (Element)jetplanDoc.selectSingleNode(paramVO.getFlightIdPath());
 //			System.out.println(flyInfo.getName() + "-->" + flyInfo.attributeValue(paramVO.getFlightIdAttribute()));
-            flyInfo = (Element)jetplanDoc.selectSingleNode(paramVO.getAircraftIdPath());
+//            flyInfo = (Element)jetplanDoc.selectSingleNode(paramVO.getAircraftIdPath());
 //			System.out.println(flyInfo.getName() + "-->" + flyInfo.attributeValue(paramVO.getAircraftIdAttribute()));
-            flyInfo = (Element)jetplanDoc.selectSingleNode(paramVO.getDepPath());
+//            flyInfo = (Element)jetplanDoc.selectSingleNode(paramVO.getDepPath());
 //			System.out.println(flyInfo.getName() + "-->" + flyInfo.attributeValue(paramVO.getDepAttribute()));
-            flyInfo = (Element)jetplanDoc.selectSingleNode(paramVO.getArrPath());
+//            flyInfo = (Element)jetplanDoc.selectSingleNode(paramVO.getArrPath());
 //			System.out.println(flyInfo.getName() + "-->" + flyInfo.attributeValue(paramVO.getArrAttribute()));
 
             // 航路点、经度、纬度
@@ -166,6 +171,13 @@ public class JetplanParseController implements IFlyPlanParseController
                 cptInfoRecord.setPlanDate(DateUtil.StrToDate(planCreateTime, SysConstants.FORMAT_DATETIME_FULL) );
                 cptInfoRecord.setAircraftId(flyInfo.attributeValue(paramVO.getAircraftIdAttribute()));
                 cptInfoRecord.setFlightId(flyInfo.attributeValue(paramVO.getFlightIdAttribute()));
+                // 从Map（解析规则配置文件）中获取航空公司三字码对应的二字码
+                String airline2Code = mapAirlinesCodes.get(cptInfoRecord.getFlightId().substring(0,3));
+                if (ObjectUtil.isBlank(airline2Code)) {
+                    errorLogger.error("解析规则配置文件中不存在三字码‘" + cptInfoRecord.getFlightId().substring(0,3) + "’所对应的二字码！");
+                    return false;
+                }
+                cptInfoRecord.setAirlines(airline2Code);
                 cptInfoRecord.setCptName(cptPosNode.attributeValue(paramVO.getCptPosAttribute()));
                 cptInfoRecord.setDep(flyInfo.attributeValue(paramVO.getDepAttribute()));
                 cptInfoRecord.setArr(flyInfo.attributeValue(paramVO.getArrAttribute()));
@@ -191,8 +203,17 @@ public class JetplanParseController implements IFlyPlanParseController
                     cptWdRecord.setPlanId(flyPlan.attributeValue(paramVO.getPlanIdAttribute()));
                     cptWdRecord.setAircraftId(flyInfo.attributeValue(paramVO.getAircraftIdAttribute()));
                     cptWdRecord.setFlightId(flyInfo.attributeValue(paramVO.getFlightIdAttribute()));
+                    // 从Map（解析规则配置文件）中获取航空公司三字码对应的二字码
+                    String airline2Code = mapAirlinesCodes.get(cptWdRecord.getFlightId().substring(0,3));
+                    if (ObjectUtil.isBlank(airline2Code)) {
+                        errorLogger.error("解析规则配置文件中不存在三字码‘" + cptWdRecord.getFlightId().substring(0,3) + "’所对应的二字码！");
+                        return false;
+                    }
+                    cptWdRecord.setAirlines(airline2Code);
                     cptWdRecord.setCptName(cptWdNode.attributeValue(paramVO.getCptWindTempAttribute()));
                     cptWdRecord.setWindDir( Float.valueOf(flightLevelNode.attributeValue(paramVO.getWindDirAttribute())) );
+                    cptWdRecord.setPlanDate(DateUtil.StrToDate(planCreateTime, SysConstants.FORMAT_DATETIME_FULL) );
+
                     String cptFlyLevTemp = flightLevelNode.attributeValue(paramVO.getWindTepAttribute());
                     if ('P' == cptFlyLevTemp.charAt(0)) {
                         cptWdRecord.setWindTep( Float.valueOf(cptFlyLevTemp.substring(1)) );
@@ -211,11 +232,27 @@ public class JetplanParseController implements IFlyPlanParseController
             e.printStackTrace();
             errorLogger.error(e.getMessage());
         }
+        return true;
     }
 
     @Override
     public void saveToDB() {
         // TODO Auto-generated method stub
+
+//        System.out.println(cptInfoList.size());
+//        Iterator it = cptInfoList.iterator();
+//        while(it.hasNext()) {
+//            CptInfo cptPosNode = (CptInfo) it.next();
+//            System.out.println(cptPosNode);
+//        }
+
+//        System.out.println(planCptWdList.size());
+//        Iterator it = planCptWdList.iterator();
+//        while(it.hasNext()) {
+//            PlanCptWd planCptWd = (PlanCptWd) it.next();
+//            System.out.println(planCptWd);
+//        }
+
         // CPT_INFO 数据入库
         cptInfoService.save(cptInfoList);
         // PLAN_CPT_WD 数据入库

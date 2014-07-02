@@ -2,6 +2,7 @@ package com.adcc.skyfml.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  *
@@ -42,6 +43,11 @@ public class PlanCptWd implements Serializable {
     // 风温
     @Column(name = "wind_tep", nullable = false)
     private float windTep;
+    // 计划生成时间
+    // column实现了名称之间的转换，并添加约束，超过则报出异常
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "plan_date", nullable = false)
+    private Date planDate;
     // 高度层
     @Column(nullable = false)
     private float alt;
@@ -106,6 +112,14 @@ public class PlanCptWd implements Serializable {
         this.id = id;
     }
 
+    public Date getPlanDate() {
+        return planDate;
+    }
+
+    public void setPlanDate(Date planDate) {
+        this.planDate = planDate;
+    }
+
     public String getAirlines() {
         return airlines;
     }
@@ -117,6 +131,6 @@ public class PlanCptWd implements Serializable {
     public String toString() {
         return flightId + " @ " + aircraftId + " @ " + planId + " @ " + cptName + " @ "
                 + windVel + " @ " + windTep + " @ " +
-                alt + " @ " + airlines + " @ " + windDir + " 。" ;
+                alt + " @ " + airlines + " @ " + planDate + " @ " + windDir + " 。" ;
     }
 }

@@ -29,7 +29,7 @@ import org.dom4j.io.XMLWriter;
  * <P>Description: 解析飞行计划服务
  * <P>Version: v1.0
  * <P>History: 
- * @param <T>
+ * @param
  */
 public class CQFlyPlanParseController implements IFlyPlanParseController
 {
@@ -64,7 +64,7 @@ public class CQFlyPlanParseController implements IFlyPlanParseController
 	}
 
 	@Override
-	public void parseDataSource(File fDataSource) {
+	public boolean parseDataSource(File fDataSource) {
 		// TODO Auto-generated method stub
 		String flyPlanStr ="";
 		try {
@@ -106,7 +106,7 @@ public class CQFlyPlanParseController implements IFlyPlanParseController
 				System.out.println("no matches!!");
 			}
 		}
-		
+		return true;
 	}
 
 	@Override
